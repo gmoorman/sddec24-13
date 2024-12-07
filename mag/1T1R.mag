@@ -1,0 +1,75 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1731452249
+<< locali >>
+rect -100 2500 380 2560
+rect -100 760 -40 2500
+rect 320 760 380 2500
+rect -100 680 380 760
+rect -100 480 180 680
+rect 340 480 380 680
+rect -100 420 380 480
+<< viali >>
+rect 180 480 340 680
+<< metal1 >>
+rect -24 1832 -14 1896
+rect 72 1832 82 1896
+rect 120 900 160 2420
+rect 200 1520 440 1760
+rect 90 840 100 900
+rect 180 840 190 900
+rect -100 680 380 740
+rect -100 480 180 680
+rect 340 480 380 680
+rect -100 420 380 480
+<< via1 >>
+rect -14 1832 72 1896
+rect 100 840 180 900
+<< metal2 >>
+rect -80 2820 120 2830
+rect -80 2610 120 2620
+rect -20 1906 60 2610
+rect -20 1896 72 1906
+rect -20 1840 -14 1896
+rect -14 1822 72 1832
+rect 200 1680 440 1760
+rect 580 1740 780 1750
+rect 200 1600 580 1680
+rect 200 1520 440 1600
+rect 580 1530 780 1540
+rect -360 900 -160 960
+rect 100 900 180 910
+rect -360 840 100 900
+rect -360 760 -160 840
+rect 100 830 180 840
+<< via2 >>
+rect -80 2620 120 2820
+rect 580 1540 780 1740
+<< metal3 >>
+rect -90 2820 130 2825
+rect -90 2620 -80 2820
+rect 120 2620 130 2820
+rect -90 2615 130 2620
+rect 570 1740 790 1745
+rect 570 1540 580 1740
+rect 780 1540 790 1740
+rect 570 1535 790 1540
+use sky130_fd_pr__nfet_g5v0d10v5_9YEQ2B  XM1
+timestamp 1730401023
+transform 1 0 138 0 1 1638
+box -278 -958 278 958
+use sky130_fd_pr_reram__reram_cell_X  XR1
+timestamp 1725989690
+transform 1 0 256 0 1 2038
+box -36 -498 176 -286
+<< labels >>
+flabel metal1 -60 480 140 680 0 FreeSans 256 0 0 0 VSS
+port 1 nsew
+flabel metal2 -360 760 -160 960 0 FreeSans 256 0 0 0 WL
+port 2 nsew
+flabel metal3 580 1540 780 1740 0 FreeSans 256 0 0 0 BL
+port 3 nsew
+flabel metal3 -80 2620 120 2820 0 FreeSans 256 0 0 0 SL
+port 0 nsew
+<< end >>

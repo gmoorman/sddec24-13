@@ -1,0 +1,144 @@
+magic
+tech sky130B
+timestamp 1731881643
+<< metal1 >>
+rect 2580 -1160 3270 -1060
+rect 2900 -2340 3000 -1160
+rect 2580 -2440 3270 -2340
+rect 2900 -3640 3000 -2440
+rect 2580 -3740 3270 -3640
+rect 2900 -4920 3000 -3740
+rect 1280 -6450 1380 -4920
+rect 1820 -6450 1920 -4920
+rect 2360 -6350 2460 -4920
+rect 2580 -5020 3270 -4920
+rect 2900 -6350 3000 -5020
+rect 2580 -6450 3270 -6350
+rect 3490 -6450 3590 -4920
+rect 4030 -6450 4130 -4920
+rect 4570 -6450 4670 -4920
+rect 2900 -7630 3000 -6450
+rect 2580 -7730 3270 -7630
+rect 2900 -8930 3000 -7730
+rect 2580 -9030 3270 -8930
+rect 2900 -10210 3000 -9030
+rect 1280 -10440 1380 -10300
+rect 2580 -10310 3270 -10210
+<< metal2 >>
+rect 810 -90 910 10
+rect 2570 -90 3120 10
+rect 810 -1020 910 -920
+rect 2430 -1020 3120 -920
+rect 810 -1370 910 -1270
+rect 2570 -1370 3120 -1270
+rect 810 -2300 910 -2200
+rect 2430 -2300 3120 -2200
+rect 810 -2670 910 -2570
+rect 2570 -2670 3120 -2570
+rect 810 -3600 910 -3500
+rect 2430 -3600 3120 -3500
+rect 810 -3950 910 -3850
+rect 2570 -3950 3120 -3850
+rect 810 -4880 910 -4780
+rect 2430 -4880 3120 -4780
+rect 810 -5380 910 -5280
+rect 2570 -5380 3120 -5280
+rect 810 -6310 910 -6210
+rect 2430 -6310 3120 -6210
+rect 810 -6660 910 -6560
+rect 2570 -6660 3120 -6560
+rect 810 -7590 910 -7490
+rect 2430 -7590 3120 -7490
+rect 810 -7960 910 -7860
+rect 2570 -7960 3120 -7860
+rect 810 -8890 910 -8790
+rect 2430 -8890 3120 -8790
+rect 810 -9240 910 -9140
+rect 2570 -9240 3120 -9140
+rect 810 -10170 910 -10070
+rect 2430 -10170 3120 -10070
+<< metal3 >>
+rect 1280 -90 1380 150
+rect 1820 -90 1920 150
+rect 2360 -90 2460 150
+rect 2900 -90 3000 150
+rect 3490 -90 3590 150
+rect 4030 -90 4130 150
+rect 4570 -90 4670 150
+rect 5110 -90 5210 150
+rect 1280 -5380 1380 -4390
+rect 1820 -5380 1920 -4390
+rect 2360 -5380 2460 -4390
+rect 2900 -5380 3000 -4390
+rect 3490 -5380 3590 -4390
+rect 4030 -5380 4130 -4390
+rect 4570 -5380 4670 -4390
+rect 5110 -5380 5210 -4390
+use 4x4  x1
+timestamp 1731797214
+transform 1 0 -20 0 1 -150
+box 830 -4900 3025 165
+use 4x4  x2
+timestamp 1731797214
+transform 1 0 2190 0 1 -150
+box 830 -4900 3025 165
+use 4x4  x3
+timestamp 1731797214
+transform 1 0 2190 0 1 -5440
+box 830 -4900 3025 165
+use 4x4  x4
+timestamp 1731797214
+transform 1 0 -20 0 1 -5440
+box 830 -4900 3025 165
+<< labels >>
+flabel metal3 1280 50 1380 150 0 FreeSans 128 0 0 0 BL1
+port 0 nsew
+flabel metal3 1820 50 1920 150 0 FreeSans 128 0 0 0 BL2
+port 1 nsew
+flabel metal3 2360 50 2460 150 0 FreeSans 128 0 0 0 BL3
+port 2 nsew
+flabel metal3 2900 50 3000 150 0 FreeSans 128 0 0 0 BL4
+port 3 nsew
+flabel metal3 3490 50 3590 150 0 FreeSans 128 0 0 0 BL5
+port 4 nsew
+flabel metal3 4030 50 4130 150 0 FreeSans 128 0 0 0 BL6
+port 5 nsew
+flabel metal3 4570 50 4670 150 0 FreeSans 128 0 0 0 BL7
+port 6 nsew
+flabel metal3 5110 50 5210 150 0 FreeSans 128 0 0 0 BL8
+port 7 nsew
+flabel metal2 810 -90 910 10 0 FreeSans 128 0 0 0 SL1
+port 8 nsew
+flabel metal2 810 -1020 910 -920 0 FreeSans 128 0 0 0 WL1
+port 9 nsew
+flabel metal2 810 -1370 910 -1270 0 FreeSans 128 0 0 0 SL2
+port 17 nsew
+flabel metal2 810 -2300 910 -2200 0 FreeSans 128 0 0 0 WL2
+port 10 nsew
+flabel metal2 810 -2670 910 -2570 0 FreeSans 128 0 0 0 SL3
+port 18 nsew
+flabel metal2 810 -3600 910 -3500 0 FreeSans 128 0 0 0 WL3
+port 11 nsew
+flabel metal2 810 -3950 910 -3850 0 FreeSans 128 0 0 0 SL4
+port 19 nsew
+flabel metal2 810 -4880 910 -4780 0 FreeSans 128 0 0 0 WL4
+port 12 nsew
+flabel metal2 810 -5380 910 -5280 0 FreeSans 128 0 0 0 SL5
+port 20 nsew
+flabel metal2 810 -6310 910 -6210 0 FreeSans 128 0 0 0 WL5
+port 13 nsew
+flabel metal2 810 -6660 910 -6560 0 FreeSans 128 0 0 0 SL6
+port 21 nsew
+flabel metal2 810 -7590 910 -7490 0 FreeSans 128 0 0 0 WL6
+port 14 nsew
+flabel metal2 810 -7960 910 -7860 0 FreeSans 128 0 0 0 SL7
+port 23 nsew
+flabel metal2 810 -8890 910 -8790 0 FreeSans 128 0 0 0 WL7
+port 15 nsew
+flabel metal2 810 -9240 910 -9140 0 FreeSans 128 0 0 0 SL8
+port 24 nsew
+flabel metal2 810 -10170 910 -10070 0 FreeSans 128 0 0 0 WL8
+port 16 nsew
+flabel metal1 1280 -10440 1380 -10340 0 FreeSans 128 0 0 0 VSS
+port 25 nsew
+<< end >>

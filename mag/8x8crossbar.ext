@@ -1,0 +1,964 @@
+timestamp 1729956472
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use 4x4crossbar x4 1 0 14940 0 1 -11800
+use 4x4crossbar x3 1 0 23680 0 1 -11800
+use 4x4crossbar x2 1 0 23680 0 1 880
+use 4x4crossbar x1 1 0 14940 0 1 880
+port "SL8" 24 30820 -17980 31020 -17780 m3
+port "SL7" 23 29440 -17980 29640 -17780 m3
+port "SL6" 22 25800 -17980 26000 -17780 m3
+port "SL5" 21 24420 -17980 24620 -17780 m3
+port "SL4" 19 22080 -18000 22280 -17800 m3
+port "SL3" 18 20700 -18000 20900 -17800 m3
+port "SL2" 17 17060 -18000 17260 -17800 m3
+port "SL1" 8 15680 -18000 15880 -17800 m3
+port "BL8" 7 31480 7540 31680 7740 m3
+port "BL7" 6 30100 7540 30300 7740 m3
+port "BL6" 5 26460 7540 26660 7740 m3
+port "BL5" 4 25080 7540 25280 7740 m3
+port "BL4" 3 22740 7560 22940 7760 m3
+port "BL3" 2 21360 7560 21560 7760 m3
+port "BL2" 1 17720 7560 17920 7760 m3
+port "BL1" 0 16340 7560 16540 7760 m3
+port "WL8" 16 14260 -16800 14460 -16600 m2
+port "WL7" 15 14260 -13860 14460 -13660 m2
+port "WL6" 14 14260 -10500 14460 -10300 m2
+port "WL5" 13 14260 -7560 14460 -7360 m2
+port "WL4" 12 14260 -4120 14460 -3920 m2
+port "WL3" 11 14260 -1180 14460 -980 m2
+port "WL2" 10 14260 2180 14460 2380 m2
+port "WL1" 9 14260 5120 14460 5320 m2
+port "VSS" 25 14820 -5200 15020 -5000 m1
+node "SL8" 0 235.215 30820 -17980 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "SL7" 0 235.215 29440 -17980 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "SL6" 0 235.215 25800 -17980 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "SL5" 0 235.215 24420 -17980 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "SL4" 0 239.346 22080 -18000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "SL3" 0 242.218 20700 -18000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "SL2" 0 242.218 17060 -18000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "SL1" 0 242.218 15680 -18000 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "m3_31480_n5400#" 1 835.956 31480 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_30820_n5700#" 0 276.753 30820 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_30100_n5400#" 1 766.982 30100 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_29440_n5700#" 0 345.728 29440 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_26460_n5400#" 1 835.956 26460 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_25800_n5700#" 0 276.753 25800 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_25080_n5400#" 1 762.026 25080 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_24420_n5700#" 0 290.462 24420 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_22740_n5400#" 1 700.625 22740 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_22080_n5700#" 0 236.69 22080 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_21360_n5400#" 1 716.556 21360 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_20700_n5700#" 0 298.271 20700 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_17720_n5400#" 1 788.5 17720 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_17060_n5700#" 0 241.909 17060 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "m3_16340_n5400#" 1 727.182 16340 -5400 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 452000 4920 0 0 0 0 0 0
+node "m3_15680_n5700#" 0 295.108 15680 -5700 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 172000 2120 0 0 0 0 0 0
+node "BL8" 0 235.215 31480 7540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "BL7" 0 235.215 30100 7540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "BL6" 0 235.215 26460 7540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "BL5" 0 235.215 25080 7540 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 92000 1320 0 0 0 0 0 0
+node "BL4" 0 242.218 22740 7560 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "BL3" 0 242.218 21360 7560 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "BL2" 0 242.218 17720 7560 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "BL1" 0 242.218 16340 7560 m3 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0
+node "m2_21800_n16800#" 1 742.628 21800 -16800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL8" 0 259.208 14260 -16800 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_n13860#" 1 742.628 21800 -13860 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL7" 0 259.208 14260 -13860 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_n10500#" 1 742.628 21800 -10500 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL6" 0 259.208 14260 -10500 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_n7560#" 1 736.888 21800 -7560 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL5" 0 253.468 14260 -7560 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_n4120#" 1 725.744 21800 -4120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL4" 0 259.208 14260 -4120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_n1180#" 1 742.628 21800 -1180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL3" 0 259.208 14260 -1180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_2180#" 1 742.628 21800 2180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL2" 0 259.208 14260 2180 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "m2_21800_5120#" 1 742.628 21800 5120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 336000 3760 0 0 0 0 0 0 0 0
+node "WL1" 0 259.208 14260 5120 m2 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 96000 1360 0 0 0 0 0 0 0 0
+node "VSS" 10 8966.19 14820 -5200 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 3324000 33640 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VSS" "WL5" 24.1089
+cap "VSS" "m3_17060_n5700#" 94.9402
+cap "SL6" "SL5" 27.0159
+cap "m3_15680_n5700#" "m3_16340_n5400#" 76.7407
+cap "BL8" "BL7" 27.0159
+cap "BL2" "BL1" 28.1905
+cap "VSS" "m3_15680_n5700#" 114.735
+cap "m3_22740_n5400#" "m3_24420_n5700#" 26.5641
+cap "m3_17060_n5700#" "m3_17720_n5400#" 76.7407
+cap "VSS" "m3_22740_n5400#" 129.561
+cap "m3_26460_n5400#" "m3_25800_n5700#" 76.7407
+cap "BL4" "BL3" 28.1905
+cap "m3_31480_n5400#" "m3_30820_n5700#" 76.7407
+cap "m3_22740_n5400#" "m3_21360_n5400#" 99.8413
+cap "m2_21800_n4120#" "m3_22740_n5400#" 293.138
+cap "VSS" "m2_21800_n7560#" 26.672
+cap "VSS" "m3_16340_n5400#" 106.988
+cap "m3_25800_n5700#" "m3_25080_n5400#" 69.0667
+cap "m3_22080_n5700#" "m3_22740_n5400#" 76.7407
+cap "SL4" "m2_21800_n16800#" 3.31882
+cap "VSS" "m3_24420_n5700#" 22.6563
+cap "VSS" "m3_20700_n5700#" 105.613
+cap "m3_16340_n5400#" "m3_17720_n5400#" 99.8413
+cap "m3_30100_n5400#" "m3_29440_n5700#" 76.7407
+cap "m3_30100_n5400#" "m3_30820_n5700#" 69.0667
+cap "VSS" "m3_17720_n5400#" 112.213
+cap "VSS" "m3_21360_n5400#" 101.54
+cap "m2_21800_n4120#" "VSS" 9.44134
+cap "m3_22080_n5700#" "VSS" 98.0282
+cap "m3_20700_n5700#" "m3_21360_n5400#" 76.7407
+cap "SL1" "SL2" 28.1905
+cap "m3_22080_n5700#" "m3_20700_n5700#" 17.619
+cap "m2_21800_n4120#" "m3_21360_n5400#" 21.1095
+cap "m3_22080_n5700#" "m3_21360_n5400#" 69.0667
+cap "m3_15680_n5700#" "m3_17060_n5700#" 17.619
+cap "m3_24420_n5700#" "m3_25080_n5400#" 76.7407
+cap "m3_22080_n5700#" "m2_21800_n4120#" 3.97177
+cap "VSS" "m3_25080_n5400#" 5.90683
+cap "m3_29440_n5700#" "m3_30820_n5700#" 17.619
+cap "SL3" "SL4" 28.1905
+cap "BL6" "BL5" 27.0159
+cap "SL7" "SL8" 27.0159
+cap "m3_25800_n5700#" "m3_24420_n5700#" 17.619
+cap "m3_30100_n5400#" "m3_31480_n5400#" 99.8413
+cap "m3_16340_n5400#" "m3_17060_n5700#" 69.0667
+cap "m3_26460_n5400#" "m3_25080_n5400#" 99.8413
+cap "x4/WL4" "x4/x2/x4/VSS" 3.47422
+cap "x4/x2/x4/VSS" "x4/SL1" 3.71224
+cap "x4/SL1" "x4/SL2" -5.87302
+cap "x4/WL4" "x4/SL1" 1.79727
+cap "x4/x2/x4/VSS" "x4/SL2" 3.71224
+cap "x4/x2/x4/WL" "x4/SL2" 0.912388
+cap "x4/x4/WL2" "x4/SL3" 1.13268
+cap "x4/x4/WL2" "x4/x4/x4/VSS" 0.17652
+cap "x4/x4/x4/VSS" "x4/SL3" 3.56515
+cap "x4/x4/x3/XR1/BE" "x4/SL4" -0.045328
+cap "x4/x4/WL2" "x4/SL4" -0.15325
+cap "x4/SL4" "x4/SL3" -5.87302
+cap "x4/x4/x3/XR1/BE" "x4/x4/WL2" 0.0419748
+cap "x4/x4/x4/XR1/BE" "x4/x4/WL2" 8.41143
+cap "x4/x4/x4/VSS" "x4/SL4" -9.24699
+cap "x4/x4/x4/XR1/BE" "x3/x2/VSS" 0.4
+cap "x4/x4/WL2" "x4/SL4" 73.8593
+cap "x4/SL4" "x4/SL3" -5.87302
+cap "x4/SL4" "x3/x2/VSS" 1.92391
+cap "x4/x4/x4/XM1/a_n108_n700#" "x4/SL4" -2.70399
+cap "x4/x4/x4/VSS" "x4/x4/WL2" 85.3214
+cap "x4/x4/x4/XR1/BE" "x4/SL4" -0.459595
+cap "x4/x4/x4/VSS" "x3/x2/VSS" 6.49986
+cap "x4/x4/WL2" "x3/x2/VSS" 1.81607
+cap "x4/x4/x4/XM1/a_n108_n700#" "x4/x4/WL2" -3.22699
+cap "x4/x4/x4/XR1/BE" "x4/x4/x4/VSS" 0.405379
+cap "x4/x4/x4/WL" "x4/x4/x4/VSS" 7.47982
+cap "x4/x4/x4/VSS" "x4/SL4" 0.0483898
+cap "x3/x2/x4/VSS" "x3/SL1" 3.50895
+cap "x3/WL4" "x3/x2/x4/VSS" 0.922443
+cap "x3/WL4" "x3/SL1" 2.15221
+cap "x3/SL1" "x3/SL2" -5.87302
+cap "x3/SL2" "x3/x2/WL2" 0.861014
+cap "x3/SL2" "x3/x2/x4/VSS" 3.50895
+cap "x3/SL2" "x3/SL1" -5.87302
+cap "x3/SL3" "x3/x4/x4/VSS" 3.50895
+cap "x3/SL4" "x3/SL3" -5.87302
+cap "x3/SL3" "x3/x4/WL2" 0.861014
+cap "x3/SL4" "x3/x4/x4/VSS" 3.50895
+cap "x3/SL4" "x3/SL3" -5.87302
+cap "x3/SL4" "x3/x4/WL2" 0.755972
+cap "x4/x4/WL2" "x4/x4/x4/XR1/BE" 1.01688
+cap "x4/x4/WL2" "x4/x4/x4/BL" 11.8203
+cap "x4/x4/x4/BL" "x4/x4/x4/XR1/BE" -0.0640901
+cap "x3/x2/VSS" "x4/SL4" 3.58215
+cap "x4/x4/WL2" "x3/x2/VSS" 0.404807
+cap "x4/x4/x4/BL" "x3/x2/VSS" 0.0560205
+cap "x4/x4/x4/XR1/BE" "x3/x2/VSS" 25.9186
+cap "x4/x4/x4/BL" "x4/x4/VSS" -2.21112
+cap "x4/x4/WL2" "x4/SL4" 0.168692
+cap "x4/x4/VSS" "x3/x2/VSS" 2.16273
+cap "x4/x4/x4/VSS" "x4/x4/x4/BL" 19.5297
+cap "x4/x4/x4/VSS" "x4/x4/x4/WL" 0.38836
+cap "x4/x4/x4/BL" "x4/x4/x4/WL" 13.2639
+cap "x3/SL1" "x4/x4/x4/BL" 19.619
+cap "x4/x4/x4/VSS" "x4/x4/x4/XR1/BE" 26.1156
+cap "x3/WL4" "x3/x2/x3/BL" -7.10543e-15
+cap "x3/SL1" "x4/x4/x4/BL" 19.8161
+cap "x3/x2/x3/XR1/BE" "x3/x2/x3/BL" 2.84217e-14
+cap "x3/x2/VSS" "x4/x4/x4/BL" 0.993926
+cap "x3/x2/VSS" "x3/x2/x3/BL" -7.10543e-15
+cap "x4/WL3" "x4/x2/VSS" 1.04227
+cap "x4/WL3" "x4/x2/x3/SL" 0.265466
+cap "x4/x4/WL1" "x4/x4/VSS" 0.0756514
+cap "x4/x4/x4/SL" "x3/x2/VSS" 0.414957
+cap "x4/x4/WL2" "x4/x4/x4/SL" -0.0432766
+cap "x4/x4/WL2" "x4/x4/WL1" 0.350514
+cap "x4/x4/x3/BL" "x4/x4/VSS" -0.173724
+cap "x4/x4/WL1" "x4/x4/x4/SL" 93.2936
+cap "x4/x4/x4/BL" "x4/x4/VSS" -0.681533
+cap "x3/x2/VSS" "x4/x4/VSS" 12.8804
+cap "x4/x4/WL2" "x4/x4/VSS" 0.0782665
+cap "x4/x4/WL1" "x4/x4/x3/BL" 0.510847
+cap "x4/x4/x4/SL" "x4/x4/VSS" -8.69239
+cap "x4/x4/WL1" "x4/x4/VSS" 96.8982
+cap "x4/x4/WL1" "x4/x4/x4/BL" -0.277587
+cap "x4/x4/WL1" "x4/x4/x4/XR1/BE" 0.151154
+cap "x4/x4/WL2" "x3/x2/VSS" 1.12697
+cap "x4/x4/x2/VSS" "x4/x4/x2/WL" 1.8112
+cap "x4/x4/x4/BL" "x3/x2/x3/SL" 33.2373
+cap "x4/x4/x2/VSS" "x4/x4/x4/WL" 1.06122
+cap "x4/x4/x2/VSS" "x4/x4/x4/BL" 35.1716
+cap "x4/x4/x2/VSS" "x4/x4/x4/SL" 1.23745
+cap "x4/x4/x4/BL" "x4/x4/x2/WL" 105.807
+cap "x4/x4/x4/BL" "x3/x2/x3/SL" 33.3531
+cap "x3/x2/VSS" "x4/x4/x4/BL" 0.657773
+cap "x3/x2/x3/SL" "x3/WL3" 0.309372
+cap "x3/x2/VSS" "x3/WL3" 0.276733
+cap "x4/VSS" "x4/WL3" 2.43196
+cap "x4/WL3" "x4/x2/x3/SL" 0.61942
+cap "x4/x4/x4/SL" "x4/x4/WL1" -0.15325
+cap "x4/x4/x1/XR1/BE" "x4/x4/x4/SL" -0.045328
+cap "x4/x4/WL1" "x4/x4/x2/VSS" 0.100869
+cap "x4/x4/x1/XR1/BE" "x4/x4/WL1" 0.0419748
+cap "x4/x4/x4/SL" "x4/x4/WL1" 25.1091
+cap "x4/x4/x4/SL" "x4/x4/x2/XR1/BE" -0.459595
+cap "x4/x4/BL1" "x4/x4/x2/VSS" -0.231632
+cap "x4/x4/x4/XM1/a_n50_n788#" "x4/x4/WL1" -0.178454
+cap "x3/VSS" "x4/x4/x4/SL" 0.510498
+cap "x4/x4/BL2" "x4/x4/WL1" 21.4084
+cap "x4/x4/BL2" "x4/x4/x2/XR1/BE" -0.395189
+cap "x4/x4/x2/VSS" "x4/x4/x4/SL" -4.66226
+cap "x4/x4/x2/XR1/BE" "x4/x4/WL1" 16.8959
+cap "x3/VSS" "x4/x4/BL2" 0.0560205
+cap "x4/x4/x2/VSS" "x4/x4/BL2" -3.80136
+cap "x3/VSS" "x4/x4/WL1" 1.81607
+cap "x4/x4/x2/VSS" "x4/x4/WL1" 3.7542
+cap "x3/VSS" "x4/x4/x2/XR1/BE" 24.1732
+cap "x4/x4/BL1" "x4/x4/WL1" 0.68113
+cap "x3/VSS" "x4/x4/x2/VSS" 2.16273
+cap "x4/x4/x2/WL" "x4/x4/BL2" 207.363
+cap "x4/x4/x2/VSS" "x4/x4/x2/WL" 5.66862
+cap "x4/x4/x2/XR1/BE" "x4/x4/BL2" -0.243653
+cap "x3/x2/x3/SL" "x4/x4/BL2" 33.2568
+cap "x4/x4/x2/XR1/BE" "x4/x4/x2/VSS" 24.3536
+cap "x4/x4/x2/VSS" "x4/x4/BL2" 28.2512
+cap "x3/x2/x3/SL" "x3/WL3" 0.721867
+cap "x3/VSS" "x3/WL3" 0.64571
+cap "x3/x2/x3/SL" "x4/x4/BL2" 33.3918
+cap "x3/x2/x1/XR1/TE" "x3/x2/x1/XR1/BE" 1.42109e-14
+cap "x3/VSS" "x4/x4/BL2" 1.51771
+cap "x4/x4/x2/XR1/BE" "x3/VSS" 2.14545
+cap "x4/x4/WL1" "x4/x3/x4/VSS" 0.0782665
+cap "x4/x4/WL1" "x4/x4/x2/SL" -0.0244134
+cap "x4/x3/x4/VSS" "x4/x4/x2/SL" -0.234375
+cap "x4/x4/WL1" "x3/VSS" 1.53177
+cap "x4/x3/WL2" "x4/x4/x2/SL" 0.228489
+cap "x3/VSS" "x4/x3/x4/VSS" 0.525234
+cap "x3/VSS" "x4/x4/x2/SL" 0.628724
+cap "x4/x4/x2/WL" "x4/x3/x4/VSS" 1.44958
+cap "x4/x4/x2/XR1/BE" "x4/x3/x4/VSS" 2.16731
+cap "x4/x4/BL2" "x4/x3/x4/VSS" 46.9302
+cap "x4/x4/BL2" "x3/x2/x1/SL" 33.2373
+cap "x4/x4/x2/SL" "x4/x3/x4/VSS" 2.84315
+cap "x3/x2/x1/SL" "x4/x4/BL2" 33.4088
+cap "x4/x4/BL2" "x3/VSS" 0.414153
+cap "x4/WL2" "x4/VSS" 3.47422
+cap "x4/WL2" "x4/x2/x1/SL" 0.884886
+cap "x4/x3/x3/XR1/BE" "x4/x3/WL2" 0.0419748
+cap "x4/x3/x4/VSS" "x4/x3/WL2" 0.17652
+cap "x4/x4/x2/SL" "x4/x3/WL2" -0.15325
+cap "x4/x4/x2/SL" "x4/x3/x3/XR1/BE" -0.045328
+cap "x4/x3/x4/VSS" "x4/x4/BL1" -0.405357
+cap "x4/x3/x4/VSS" "x3/VSS" 8.90755
+cap "x3/VSS" "x4/x3/x4/XR1/BE" 13.6313
+cap "x4/x3/x4/XR1/BE" "x4/x4/x2/SL" -0.459595
+cap "x4/x3/x4/VSS" "x4/x4/x2/SL" -12.9592
+cap "x4/x3/WL2" "x4/x3/x4/XR1/BE" 16.8959
+cap "x4/x3/x4/VSS" "x4/x3/WL2" 102.217
+cap "x3/VSS" "x4/x4/BL2" 0.0280103
+cap "x4/x3/WL2" "x4/x4/BL2" 21.1308
+cap "x4/x3/x4/VSS" "x4/x4/BL2" -4.4829
+cap "x4/x3/x4/XR1/BE" "x4/x4/BL2" -0.395189
+cap "x4/x4/BL1" "x4/x3/WL2" 1.19198
+cap "x3/VSS" "x4/x3/WL2" 1.81607
+cap "x4/x3/WL2" "x4/x4/x2/SL" 117.703
+cap "x3/x2/x1/SL" "x4/x4/BL2" 33.234
+cap "x4/x4/x2/SL" "x4/x3/x4/VSS" 0.435508
+cap "x4/x3/x4/VSS" "x4/x3/x4/WL" 7.47982
+cap "x4/x3/x4/WL" "x4/x4/BL2" 313.17
+cap "x4/x3/x4/VSS" "x4/x3/x4/XR1/BE" 13.7328
+cap "x4/x4/BL2" "x4/x3/x4/XR1/BE" -0.243653
+cap "x4/x3/x4/VSS" "x4/x4/BL2" 30.9426
+cap "x3/x2/x1/SL" "x3/x2/BL1" 5.68434e-14
+cap "x3/x2/x1/SL" "x4/x4/BL2" 33.2243
+cap "x3/x2/BL1" "x3/VSS" -1.42109e-14
+cap "x4/x4/BL2" "x3/VSS" 1.25681
+cap "x3/x2/x1/SL" "x3/WL2" 1.03124
+cap "x3/x2/x1/SL" "x3/VSS" 1.13687e-13
+cap "x3/WL2" "x3/VSS" 0.922443
+cap "x3/x1/VSS" "x4/x3/WL2" 1.53177
+cap "x4/x3/VSS" "x4/x3/WL2" 0.0782665
+cap "x3/x1/VSS" "x4/x3/VSS" 1.7262
+cap "x3/x1/VSS" "x4/x3/x4/BL" 0.0280103
+cap "x4/x3/x4/XR1/BE" "x3/x1/VSS" 12.6873
+cap "x4/x3/WL1" "x4/x3/SL2" 0.471887
+cap "x4/x3/WL2" "x4/x3/SL2" 0.125415
+cap "x3/x1/VSS" "x4/x3/SL2" 1.13922
+cap "x4/x3/VSS" "x4/x3/SL2" -0.395412
+cap "x4/x3/WL1" "x4/x3/WL2" 0.0519028
+cap "x3/x1/SL1" "x4/x3/x4/BL" 33.2601
+cap "x4/x3/x4/VSS" "x4/x3/x4/WL" 1.44958
+cap "x4/x3/x4/VSS" "x4/x3/x4/XR1/BE" 12.7881
+cap "x4/x3/x4/VSS" "x4/x3/x4/BL" 33.4615
+cap "x4/x3/x4/VSS" "x4/x3/SL2" 1.18906
+cap "x3/x1/VSS" "x3/x1/SL1" -5.68434e-14
+cap "x4/x3/x4/BL" "x3/x1/VSS" 1.08921
+cap "x4/x3/x4/BL" "x3/x1/SL1" 33.5763
+cap "x3/x1/VSS" "x3/x1/x3/BL" -7.10543e-15
+cap "x4/BL1" "x4/x1/VSS" 0.045864
+cap "x4/x1/x3/SL" "x4/x1/VSS" 18.4073
+cap "x4/WL1" "x4/x1/VSS" 136.203
+cap "x4/x1/x3/SL" "x4/WL1" 0.763994
+cap "x4/WL1" "x4/x1/VSS" 2.65468
+cap "x4/x1/x3/SL" "x4/x1/VSS" 30.0623
+cap "x4/x3/x1/XR1/BE" "x4/x3/WL1" 0.0419748
+cap "x4/x3/VSS" "x4/x3/WL1" 0.17652
+cap "x4/x3/x4/SL" "x4/x3/WL1" -0.15325
+cap "x4/x3/x1/XR1/BE" "x4/x3/x4/SL" -0.045328
+cap "x4/x3/WL1" "x4/x3/x4/XR1/BE" 0.151154
+cap "x4/x3/WL1" "x4/x3/x4/SL" 117.762
+cap "x3/x1/VSS" "x4/x3/WL1" 1.81607
+cap "x4/x3/x2/XR1/BE" "x4/BL4" -0.331099
+cap "x4/x3/VSS" "x4/x3/x4/SL" -12.9592
+cap "x4/x3/VSS" "x3/x1/VSS" 13.3169
+cap "x4/x3/WL1" "x4/x3/x4/XM1/a_n50_n788#" 0.120157
+cap "x4/x3/x2/XR1/BE" "x4/x3/WL1" 15.879
+cap "x4/BL4" "x4/x3/WL1" 9.3105
+cap "x4/BL3" "x4/x3/WL1" 1.19198
+cap "x4/BL4" "x4/x3/VSS" -2.27178
+cap "x4/x3/VSS" "x4/BL3" -0.405357
+cap "x4/x3/x2/XR1/BE" "x4/x3/x4/SL" -0.459595
+cap "x4/x3/VSS" "x4/x3/WL1" 100.652
+cap "x4/x3/x2/XR1/BE" "x3/x1/VSS" 10.5818
+cap "x4/x3/x2/XR1/BE" "x4/x3/x2/VSS" 10.6833
+cap "x4/x3/x2/XR1/BE" "x4/BL4" -0.243653
+cap "x4/BL4" "x4/x3/x2/VSS" 30.0749
+cap "x4/x3/x2/WL" "x4/x3/x2/VSS" 137.646
+cap "x4/x3/x4/SL" "x4/x3/x2/VSS" 0.0483898
+cap "x4/x3/x2/WL" "x4/BL4" 302.152
+cap "x3/x1/x3/SL" "x4/x3/x2/VSS" 18.4073
+cap "x4/BL4" "x3/x1/x3/SL" 33.2051
+cap "x3/BL1" "x4/x3/x2/VSS" 0.045864
+cap "x3/x1/x3/SL" "x3/WL1" 0.910347
+cap "x3/x1/x3/SL" "x4/BL4" 33.2051
+cap "x3/x1/VSS" "x3/WL1" 2.46154
+cap "x3/x1/x3/SL" "x3/x1/VSS" 30.0623
+cap "x3/x1/VSS" "x4/BL4" 1.09629
+cap "x4/BL1" "x4/x1/VSS" 1.1466
+cap "x4/x1/x1/SL" "x4/x1/VSS" 26.3076
+cap "x4/WL1" "x4/x1/VSS" 2.09763
+cap "x4/BL1" "x4/x1/VSS" 1.58875
+cap "x4/WL1" "x4/x1/x1/SL" 0.843528
+cap "x4/BL1" "x4/BL2" -2.78968
+cap "x4/BL1" "x4/x1/x1/SL" 12.9373
+cap "x4/x1/x2/SL" "x4/x1/VSS" 0.466093
+cap "x4/x1/x2/SL" "x4/x1/x1/SL" -8.80952
+cap "x4/x1/VSS" "x4/x1/x1/XR1/BE" 4.33691
+cap "x1/WL4" "x4/x1/x1/SL" 3.54861
+cap "x4/BL1" "x4/x1/x2/SL" 5.79191
+cap "x4/x1/VSS" "x4/x1/x1/SL" 53.8132
+cap "x4/x1/VSS" "x4/WL1" 5.35412
+cap "x4/x1/x2/SL" "x1/WL4" 0.0236747
+cap "x4/x1/x2/VSS" "x4/x1/x2/SL" 5.547
+cap "x4/x1/x2/SL" "VSS" 6.386
+cap "x4/BL2" "VSS" 0.890752
+cap "x4/BL2" "x4/x1/x2/SL" 12.9373
+cap "x4/BL2" "x4/BL1" -2.78968
+cap "VSS" "x4/x1/x2/XR1/BE" 4.33691
+cap "x4/x1/x2/VSS" "x4/x1/x2/WL" 0.0611838
+cap "x4/x1/x2/WL" "VSS" 3.04382
+cap "x4/x1/x2/VSS" "VSS" 2.05256
+cap "x4/x1/x2/SL" "x4/x1/x2/WL" 0.843528
+cap "x4/x1/x2/SL" "x1/x2/x4/WL" 3.52493
+cap "x1/x4/WL2" "x4/x3/x1/SL" 3.54861
+cap "x4/x3/VSS" "VSS" 2.1418
+cap "x4/x3/x1/SL" "VSS" 6.73446
+cap "x4/x3/WL1" "VSS" 3.04382
+cap "x4/BL3" "VSS" 0.400373
+cap "x4/x3/x1/SL" "x4/x3/x2/SL" -8.80952
+cap "x4/x3/x1/XR1/BE" "VSS" 4.33691
+cap "x4/x3/VSS" "x4/x3/x1/SL" 5.66463
+cap "x4/x3/VSS" "x4/x3/WL1" 0.0611838
+cap "x4/x3/WL1" "x4/x3/x1/SL" 0.843528
+cap "x4/BL3" "x4/x3/x1/SL" 6.50926
+cap "x4/x3/WL1" "x3/x1/VSS" 4.57559
+cap "x4/x3/x2/SL" "x4/x3/x1/SL" -8.80952
+cap "x4/x3/VSS" "x4/x3/x2/SL" 5.62005
+cap "x4/x3/x2/SL" "x4/BL4" 6.50926
+cap "x4/x3/x2/SL" "x3/x1/VSS" 6.38261
+cap "x4/x3/x2/SL" "x2/WL4" 3.54861
+cap "x4/x3/x2/XR1/BE" "x3/x1/VSS" 20.0737
+cap "x4/x3/x2/SL" "x4/BL3" 11.6502
+cap "x4/x3/VSS" "x3/x1/VSS" 3.7484
+cap "x4/BL4" "x3/x1/VSS" 0.478302
+cap "x4/x3/WL1" "x4/x3/x2/SL" 0.987807
+cap "x4/x3/x1/SL" "x4/BL3" 6.42805
+cap "x4/BL4" "x4/BL3" -2.78968
+cap "x4/x3/WL1" "x4/x3/VSS" 0.13945
+cap "x4/BL3" "x3/x1/VSS" 0.490379
+cap "x4/x3/WL1" "x4/BL4" 2.14286
+cap "x4/x3/x2/WL" "x4/BL4" 11.0182
+cap "x4/x3/x2/SL" "x4/BL4" 6.42805
+cap "x3/x1/x1/SL" "x4/x3/x2/VSS" 26.3076
+cap "x4/x3/x2/XR1/BE" "x4/x3/x2/VSS" 15.8376
+cap "x4/x3/x2/WL" "x4/x3/x2/VSS" 3.5472
+cap "x4/x3/x2/SL" "x4/x3/x2/VSS" 0.172872
+cap "x4/x3/x2/VSS" "x4/BL4" 33.4296
+cap "x4/BL3" "x4/BL4" -2.78968
+cap "x3/x1/x1/SL" "x4/BL4" 33.289
+cap "x3/BL1" "x4/x3/x2/VSS" 1.1466
+cap "x3/BL1" "x3/x1/x1/SL" 12.9373
+cap "x3/x1/VSS" "x3/BL1" 0.697993
+cap "x3/x1/VSS" "x3/x1/x1/SL" 48.9581
+cap "x4/BL4" "x3/x1/x1/SL" 33.5955
+cap "x3/x1/VSS" "x4/BL4" 1.24973
+cap "x3/x1/x1/SL" "x2/WL4" 3.54861
+cap "x3/BL1" "x3/x1/x2/SL" 5.79191
+cap "x3/x1/x2/SL" "x3/x1/x1/SL" -8.80952
+cap "x3/WL1" "x3/x1/x1/SL" 1.38089
+cap "x3/x1/VSS" "x3/WL1" 3.66664
+cap "x3/BL1" "x3/x1/x1/XR1/BE" 1.42109e-14
+cap "x3/BL1" "x3/BL2" -2.78968
+cap "x3/x1/VSS" "x3/x1/x1/XR1/BE" 0.643766
+cap "x3/x1/x2/SL" "x2/x2/WL2" 3.54861
+cap "x3/x1/x2/VSS" "x3/x1/x2/XR1/BE" 0.643766
+cap "x3/BL2" "x3/BL1" -2.78968
+cap "x3/x1/x2/VSS" "x3/x1/x2/SL" 7.54395
+cap "x3/x1/x2/SL" "x3/x1/WL1" 1.38089
+cap "x3/x1/x2/VSS" "x3/x1/WL1" 1.41752
+cap "x3/x1/x1/SL" "x3/x1/x2/SL" -8.80952
+cap "x3/x1/x2/SL" "x3/BL1" 5.85833
+cap "x3/x1/x2/SL" "x3/BL2" 12.9373
+cap "x2/x4/x4/VSS" "x3/x3/x1/XM1/a_n50_n788#" 0.739434
+cap "x2/x4/x4/VSS" "x3/x3/x1/SL" 7.54395
+cap "x2/x4/WL2" "x3/x3/x1/SL" 3.54861
+cap "x3/BL3" "x3/x3/x1/SL" 6.50926
+cap "x3/x3/x1/SL" "x3/x3/x2/SL" -8.80952
+cap "x3/x3/x1/XM1/a_n50_n788#" "x3/x3/x1/SL" 1.38089
+cap "x2/x4/x4/VSS" "x3/x3/x1/XR1/BE" 0.643766
+cap "x3/x3/x2/XM1/a_n50_n788#" "x2/x4/x4/VSS" 1.04697
+cap "x2/x4/x4/VSS" "x3/x3/x1/XM1/a_n50_n788#" 0.678084
+cap "x3/x3/x2/SL" "x3/BL3" 11.6502
+cap "x3/x3/x2/SL" "x3/BL4" 6.50926
+cap "x3/x3/x2/SL" "x3/x3/x2/XM1/a_n50_n788#" 1.38089
+cap "x3/BL4" "x3/BL3" -2.78968
+cap "x3/x3/x2/SL" "x3/x3/x1/SL" -8.80952
+cap "x3/BL3" "x3/x3/x1/SL" 6.42805
+cap "x3/x3/x2/SL" "x2/x4/WL2" 3.34445
+cap "x3/x3/x2/SL" "x2/x4/x4/VSS" 7.7155
+cap "x3/x3/x2/XM1/a_n50_n788#" "x2/x4/x4/VSS" 0.370545
+cap "x3/x3/x2/XR1/BE" "x2/x4/x4/VSS" 0.643766
+cap "x3/x3/x2/SL" "x3/BL4" 6.42805
+cap "x3/BL4" "x3/BL3" -2.78968
+cap "x1/x2/x4/VSS" "x4/BL1" -0.596232
+cap "x4/x1/x1/SL" "x1/x2/x4/VSS" 2.64073
+cap "x1/WL4" "x1/x2/x4/VSS" 12.5764
+cap "x4/x1/x1/SL" "x1/x2/x4/VSS" 9.1179
+cap "x4/x1/x1/XM1/a_n50_n788#" "x1/x2/x4/VSS" 2.93556
+cap "x4/x1/x1/SL" "x1/WL4" 1.33507
+cap "x4/BL1" "x4/x1/x2/SL" 51.8
+cap "x4/x1/x1/XR1/BE" "x1/x2/x4/VSS" 4.61053
+cap "x4/BL1" "x4/BL2" -30.5397
+cap "x1/WL4" "x1/x2/x4/VSS" 4.77757
+cap "x4/BL1" "x4/x1/x1/SL" 115.111
+cap "x4/x1/x1/SL" "x4/x1/x2/SL" -30.5397
+cap "x4/BL1" "x1/x2/x4/VSS" 123.312
+cap "x4/x1/x2/SL" "x1/x2/x4/VSS" 0.206126
+cap "x4/BL1" "x1/WL4" 165.464
+cap "x1/WL4" "x4/x1/x2/SL" 0.0157127
+cap "x1/x2/x4/VSS" "x4/BL2" 29.0415
+cap "VSS" "x4/x1/x2/XR1/BE" 4.61053
+cap "x1/x2/x4/WL" "x4/BL2" 169.389
+cap "x4/BL2" "x4/x1/x2/SL" 115.111
+cap "VSS" "x4/BL2" 10.2044
+cap "VSS" "x4/x1/x2/XM1/a_n50_n788#" 2.93556
+cap "x1/x2/x4/WL" "x1/x2/x4/VSS" -2.84217e-14
+cap "x1/x2/x4/VSS" "x4/x1/x2/SL" 1.22152
+cap "VSS" "x1/x2/x4/VSS" 39.2907
+cap "x1/x2/x4/WL" "x4/x1/x2/SL" 0.104841
+cap "VSS" "x1/x2/x4/WL" 6.98675
+cap "x4/BL2" "x4/BL1" -30.5397
+cap "VSS" "x4/x1/x2/SL" 12.7097
+cap "VSS" "x1/x4/x3/VSS" 1.35385
+cap "x1/x4/WL2" "VSS" 7.82078
+cap "VSS" "x4/x3/x1/SL" 12.8857
+cap "x4/x3/x2/SL" "x4/x3/x1/SL" -30.5397
+cap "VSS" "x1/x4/x4/VSS" 103.736
+cap "x4/x3/x1/SL" "x1/x4/x4/VSS" -10.1331
+cap "VSS" "x1/x4/WL2" 4.77757
+cap "x4/x3/x1/SL" "x1/x4/WL2" 0.930024
+cap "x1/x4/x4/VSS" "x1/x4/WL2" 0.100869
+cap "x4/BL3" "x4/x3/x1/SL" 57.5556
+cap "VSS" "x4/BL3" 0.0165681
+cap "x4/BL3" "x1/x4/x4/VSS" 3.58753
+cap "VSS" "x4/x3/x1/XR1/BE" 4.61053
+cap "VSS" "x4/x3/x1/XM1/a_n50_n788#" 2.93556
+cap "x4/x3/x2/XM1/a_n50_n788#" "VSS" 2.93556
+cap "x4/x3/x2/SL" "x2/WL4" 63.7573
+cap "x1/x4/x4/VSS" "x2/WL4" 81.2084
+cap "x4/x3/x1/SL" "x4/x3/x2/SL" -30.5397
+cap "x4/BL3" "x2/WL4" 152.798
+cap "VSS" "x2/WL4" 0.965313
+cap "x4/x3/x1/SL" "x4/BL3" 57.5556
+cap "x4/x3/x2/SL" "x1/x4/x4/VSS" -19.3644
+cap "x4/x3/x2/XR1/BE" "VSS" 4.61053
+cap "x4/BL3" "x4/x3/x2/SL" 103.6
+cap "x4/x3/x2/SL" "VSS" 12.8857
+cap "x4/BL4" "x4/x3/x2/SL" 57.5556
+cap "VSS" "x1/x4/x4/VSS" 103.316
+cap "x4/BL3" "x1/x4/x4/VSS" 116.094
+cap "x4/BL4" "x1/x4/x4/VSS" 10.8335
+cap "x4/BL3" "VSS" 6.76908
+cap "x4/BL4" "x4/BL3" -30.5397
+cap "x4/BL4" "VSS" 0.0248521
+cap "x2/x2/x3/VSS" "x3/x1/x1/SL" 2.64073
+cap "x2/WL4" "x4/BL4" 0.753278
+cap "x2/x2/x3/VSS" "x4/BL4" 36.1121
+cap "x4/BL3" "x4/BL4" -30.5397
+cap "x3/x1/x1/SL" "x4/BL4" 19.9231
+cap "x2/x2/x3/VSS" "x4/x3/x2/SL" 0.967795
+cap "x2/x2/x3/VSS" "x2/WL4" 13.0786
+cap "x4/x3/x2/SL" "x4/BL4" 57.5556
+cap "x2/x2/x3/VSS" "x3/BL1" -0.596232
+cap "x3/BL2" "x3/BL1" -30.5397
+cap "x2/x2/x4/VSS" "x3/BL1" 119.022
+cap "x2/x2/x4/VSS" "x2/WL4" 0.553466
+cap "x3/x1/x1/SL" "x3/x1/x2/SL" -30.5397
+cap "x2/x2/x4/VSS" "x4/BL4" 0.414153
+cap "x2/x2/x4/VSS" "x3/x1/x1/XM1/a_n50_n788#" 1.38503
+cap "x3/x1/x1/SL" "x2/WL4" 1.49419
+cap "x3/x1/x1/SL" "x3/BL1" 115.111
+cap "x3/BL1" "x3/x1/x2/SL" 51.8
+cap "x3/x1/x1/SL" "x4/BL4" 19.9231
+cap "x3/BL1" "x2/WL4" 165.464
+cap "x2/x2/x4/VSS" "x3/x1/x1/XR1/BE" 0.659881
+cap "x2/x2/x4/VSS" "x3/x1/x1/SL" 2.59798
+cap "x3/BL1" "x2/x2/x4/VSS" 1.82509
+cap "x2/x2/WL2" "x3/x1/x2/SL" -3.05017
+cap "x2/x2/WL2" "x2/x2/x4/VSS" 2.84217e-14
+cap "x3/x1/x2/XR1/BE" "x2/x2/x4/VSS" 0.659881
+cap "x3/x1/x2/SL" "x2/x2/x4/VSS" -3.15852
+cap "x3/x1/x2/XM1/a_n50_n788#" "x2/x2/x4/VSS" 1.38503
+cap "x3/x1/x2/SL" "x3/x1/x1/SL" -30.5397
+cap "x3/BL2" "x3/BL1" -30.5397
+cap "x3/BL2" "x2/x2/WL2" 169.389
+cap "x3/BL2" "x3/x1/x2/SL" 115.111
+cap "x3/x1/x2/SL" "x3/BL1" 51.8
+cap "x3/BL2" "x2/x2/x4/VSS" 29.0415
+cap "x3/x3/x1/SL" "x2/x4/WL2" 1.00132
+cap "x3/x3/x1/SL" "x2/x4/x4/VSS" -3.76733
+cap "x2/x4/x4/VSS" "x2/x4/WL2" -2.84217e-14
+cap "x3/BL3" "x3/x3/x1/SL" 57.5556
+cap "x2/x4/x4/VSS" "x3/x3/x1/XM1/a_n50_n788#" 0.722277
+cap "x3/BL3" "x2/x4/x4/VSS" 0.045864
+cap "x3/x3/x1/SL" "x3/x3/x2/SL" -30.5397
+cap "x3/x3/x1/SL" "x3/BL3" 57.5556
+cap "x3/BL4" "x3/BL3" -30.5397
+cap "x3/BL3" "x3/x3/x2/SL" 103.6
+cap "x2/x4/x4/VSS" "x3/x3/x1/XR1/BE" 0.659881
+cap "x2/x4/WL2" "x3/BL3" 164.783
+cap "x2/x4/x4/VSS" "x3/x3/x2/SL" -3.15852
+cap "x2/x4/WL2" "x2/x4/x4/VSS" 1.13687e-13
+cap "x3/x3/x1/SL" "x3/x3/x2/SL" -30.5397
+cap "x2/x4/x4/VSS" "x3/x3/x2/XM1/a_n50_n788#" 1.01946
+cap "x3/x3/x1/XM1/a_n50_n788#" "x2/x4/x4/VSS" 0.662749
+cap "x3/BL4" "x3/x3/x2/SL" 57.5556
+cap "x2/x4/x4/VSS" "x3/BL3" 124.188
+cap "x2/x4/WL2" "x3/BL4" 0.323851
+cap "x2/x4/WL2" "x3/x3/x2/SL" 1.26872
+cap "x3/x3/x2/XR1/BE" "x2/x4/x4/VSS" 0.659881
+cap "x3/BL3" "x3/BL4" -30.5397
+cap "x3/BL4" "x2/x4/x4/VSS" 32.1429
+cap "x3/x3/x2/SL" "x3/BL4" 57.5556
+cap "x3/x3/x2/XM1/a_n50_n788#" "x2/x4/x4/VSS" 0.365564
+cap "x2/x4/x4/WL" "x3/BL4" 1.26612
+cap "x1/x2/VSS" "x1/WL4" 1.38969
+cap "x4/x1/x2/SL" "x4/BL1" 40.3917
+cap "x4/x1/x1/SL" "x4/BL1" 89.678
+cap "x4/x1/x2/SL" "x4/x1/x1/SL" -19.2341
+cap "x4/BL1" "x4/BL2" -25.254
+cap "x4/BL1" "x1/WL4" 125.854
+cap "x4/x1/x1/SL" "x1/WL4" -2.29733
+cap "x4/BL1" "x1/x2/x3/XR1/BE" 14.3564
+cap "x4/BL1" "x1/x2/VSS" 16.3875
+cap "x4/x1/x1/SL" "x1/x2/VSS" -0.604153
+cap "x4/BL1" "x4/BL2" -25.2136
+cap "x4/x1/x2/SL" "x1/x2/x4/WL" -3.10701
+cap "x4/BL2" "x1/x2/x4/WL" 128.471
+cap "x1/x2/x4/VSS" "x4/BL2" 12.9865
+cap "x4/BL1" "x4/x1/x2/SL" 4.17191
+cap "x4/x1/x2/SL" "x4/BL2" 89.678
+cap "x4/BL2" "x1/x2/x4/XR1/BE" 14.3564
+cap "x1/x4/WL2" "x4/x3/x2/SL" -0.15325
+cap "x1/x4/x3/XR1/BE" "x4/x3/x2/SL" -0.045328
+cap "x1/x4/WL2" "x1/x4/x3/XR1/BE" 0.0419748
+cap "x1/x4/x3/XR1/BE" "x4/BL3" 8.6806
+cap "x1/x4/WL2" "x1/x4/VSS" 0.0756514
+cap "x4/x3/x1/SL" "x4/x3/x2/SL" -19.2341
+cap "x4/BL3" "x1/x4/VSS" 6.47456
+cap "x1/x4/WL2" "x4/x3/x1/SL" -2.55687
+cap "x4/BL3" "x4/x3/x1/SL" 44.7984
+cap "x4/x3/x1/SL" "x1/x4/VSS" -0.667195
+cap "x4/x3/x2/SL" "x1/x4/x4/XR1/BE" -0.459595
+cap "x1/x4/VSS" "x2/x2/VSS" 2.16273
+cap "x1/x4/VSS" "x2/WL4" 20.8364
+cap "x1/x4/VSS" "x4/BL4" 4.26344
+cap "x2/x2/VSS" "x2/WL4" 1.07728
+cap "x2/WL4" "x4/BL4" 23.6406
+cap "x2/x2/VSS" "x4/BL4" 0.0560205
+cap "x1/x4/VSS" "x4/x3/x2/SL" -5.09212
+cap "x4/x3/x2/SL" "x1/x4/x3/XR1/BE" -1.36445
+cap "x4/x3/x2/SL" "x2/WL4" 46.7284
+cap "x4/x3/x2/SL" "x2/x2/VSS" 0.602112
+cap "x4/x3/x2/SL" "x4/BL4" 44.7984
+cap "x4/x3/x2/SL" "x4/x3/x1/SL" -19.2341
+cap "x1/x4/VSS" "x4/BL3" 9.91298
+cap "x4/BL3" "x1/x4/x3/XR1/BE" 5.67578
+cap "x2/WL4" "x4/BL3" 117.41
+cap "x4/x3/x1/SL" "x4/BL3" 44.8796
+cap "x4/BL4" "x4/BL3" -25.2136
+cap "x4/x3/x2/SL" "x4/BL3" 84.7921
+cap "x2/x2/VSS" "x1/x4/x4/XR1/BE" 25.2641
+cap "x2/WL4" "x1/x4/x4/XR1/BE" 16.8959
+cap "x1/x4/x4/XR1/BE" "x4/BL4" 8.61651
+cap "x1/x4/x4/XR1/BE" "x4/BL4" 5.67578
+cap "x1/x4/x4/XR1/BE" "x2/x2/VSS" 25.4548
+cap "x3/x1/x1/SL" "x4/BL4" 33.2568
+cap "x4/BL3" "x4/BL4" -25.254
+cap "x4/BL4" "x2/x2/VSS" 37.8238
+cap "x4/x3/x2/SL" "x4/BL4" 44.8796
+cap "x4/BL4" "x2/WL4" 27.869
+cap "x2/x2/VSS" "x2/WL4" 3.25017
+cap "x3/BL1" "x3/x1/x1/SL" 89.678
+cap "x4/BL4" "x3/x1/x1/SL" 33.4157
+cap "x3/BL1" "x2/x2/x3/XR1/BE" 14.3564
+cap "x3/BL2" "x3/BL1" -25.254
+cap "x3/x1/x2/SL" "x3/x1/x1/SL" -19.2341
+cap "x2/WL4" "x2/x2/VSS" 0.368977
+cap "x3/x1/x2/SL" "x3/BL1" 40.3917
+cap "x2/WL4" "x3/x1/x1/SL" -2.23879
+cap "x2/WL4" "x3/BL1" 125.854
+cap "x2/x2/VSS" "x3/x1/x1/SL" -0.604153
+cap "x2/x2/VSS" "x3/BL1" 12.4735
+cap "x2/x2/VSS" "x4/BL4" 1.59079
+cap "x3/BL2" "x3/x1/x2/SL" 89.678
+cap "x3/x1/x1/SL" "x3/x1/x2/SL" -19.2341
+cap "x3/BL1" "x2/x2/x4/VSS" 3.91403
+cap "x3/BL2" "x2/x2/WL2" 128.471
+cap "x3/BL1" "x3/x1/x2/SL" 44.4004
+cap "x2/x2/x4/VSS" "x3/x1/x2/SL" -1.97301
+cap "x2/x2/x4/XR1/BE" "x3/BL2" 14.3564
+cap "x3/x1/x2/SL" "x2/x2/WL2" -7.71968
+cap "x3/BL1" "x3/BL2" -25.2136
+cap "x3/BL2" "x2/x2/x4/VSS" 12.9865
+cap "x2/x2/x3/XR1/BE" "x3/x1/x2/SL" -1.36445
+cap "x3/x3/x1/SL" "x2/x4/VSS" -0.667195
+cap "x2/x4/WL2" "x3/x3/x1/SL" -2.55687
+cap "x3/x3/x2/SL" "x3/x3/x1/SL" -19.2341
+cap "x3/BL3" "x3/x3/x1/SL" 44.7984
+cap "x3/x3/x1/SL" "x3/BL3" 44.8796
+cap "x3/x3/x2/SL" "x3/BL4" 44.7984
+cap "x2/x4/WL2" "x3/BL4" 0.231322
+cap "x3/BL3" "x3/BL4" -25.254
+cap "x2/x4/WL2" "x3/x3/x2/SL" -4.61267
+cap "x3/x3/x2/SL" "x2/x4/x3/XR1/BE" -1.36445
+cap "x3/x3/x2/SL" "x3/BL3" 84.7921
+cap "x2/x4/WL2" "x3/BL3" 125.343
+cap "x2/x4/x3/XR1/BE" "x3/BL3" 14.3564
+cap "x3/x3/x2/SL" "x2/x4/VSS" -1.97301
+cap "x3/x3/x1/SL" "x3/x3/x2/SL" -19.2341
+cap "x3/BL3" "x2/x4/VSS" 16.5613
+cap "x3/BL4" "x3/x3/x2/SL" 44.8796
+cap "x2/x4/x4/WL" "x3/BL4" 8.88729
+cap "x3/BL4" "x2/x4/x4/VSS" 14.8255
+cap "x2/x4/x4/XR1/BE" "x3/BL4" 14.9311
+cap "x3/BL4" "x3/BL3" -25.2136
+cap "x1/x2/VSS" "x1/x2/x3/BL" 0.173342
+cap "x1/x4/VSS" "x2/WL4" 0.0782665
+cap "x2/x2/VSS" "x1/x4/VSS" 12.8804
+cap "x2/x2/VSS" "x1/x4/x4/XR1/BE" 1.05455
+cap "x1/x4/x4/SL" "x2/WL3" 0.471887
+cap "x2/WL3" "x2/WL4" 0.0519028
+cap "x2/WL3" "x1/x4/VSS" 0.299563
+cap "x1/x4/x4/SL" "x2/WL4" -0.0432766
+cap "x1/x4/x4/SL" "x2/x2/VSS" 0.537109
+cap "x2/x2/VSS" "x2/WL4" 1.53177
+cap "x1/x4/x3/BL" "x1/x4/VSS" 0.173342
+cap "x1/x4/x4/SL" "x1/x4/VSS" -0.395412
+cap "x1/x4/x4/XR1/BE" "x2/x2/VSS" 1.0661
+cap "x2/x2/VSS" "x1/x4/x4/SL" 1.18906
+cap "x2/x2/VSS" "x1/x4/x4/BL" 37.6449
+cap "x1/x4/x4/BL" "x2/x2/x3/SL" 33.2373
+cap "x2/x2/VSS" "x2/WL4" 1.44958
+cap "x2/x2/x3/SL" "x1/x4/x4/BL" 33.3849
+cap "x2/x2/x3/BL" "x2/x2/VSS" 0.173342
+cap "x2/x2/VSS" "x1/x4/x4/BL" 0.730859
+cap "x2/x4/x3/BL" "x2/x4/VSS" 0.173342
+cap "x1/WL3" "x1/VSS" 3.47422
+cap "x1/x2/x3/SL" "x1/WL3" 0.884886
+cap "x1/x4/WL1" "x1/x4/x4/SL" -0.15325
+cap "x1/x4/WL1" "x1/x4/x1/XR1/BE" 0.0419748
+cap "x1/x4/x4/SL" "x1/x4/x1/XR1/BE" -0.045328
+cap "x1/x4/VSS" "x1/x4/WL1" 0.17652
+cap "x1/x4/x4/SL" "x2/VSS" 0.388346
+cap "x2/WL3" "x1/x4/x4/SL" 117.931
+cap "x2/WL3" "x1/x4/BL1" 1.19198
+cap "x1/x4/BL2" "x1/x4/VSS" -4.4829
+cap "x2/WL3" "x1/x4/x4/XM1/a_50_n700#" 0.151154
+cap "x1/x4/VSS" "x2/VSS" 2.16273
+cap "x2/WL3" "x1/x4/VSS" 77.9007
+cap "x1/x4/x4/SL" "x1/x4/VSS" -8.90856
+cap "x1/x4/BL2" "x1/x4/x2/XR1/BE" -0.395189
+cap "x1/x4/VSS" "x1/x4/BL1" -0.405357
+cap "x1/x4/x2/XR1/BE" "x2/VSS" 22.7186
+cap "x1/x4/x2/XR1/BE" "x2/WL3" 16.8959
+cap "x1/x4/BL2" "x2/VSS" 0.0560205
+cap "x1/x4/BL2" "x2/WL3" 21.1308
+cap "x1/x4/x2/XR1/BE" "x1/x4/x4/SL" -0.459595
+cap "x1/x4/x4/XM1/a_n50_n788#" "x2/WL3" 0.120157
+cap "x2/WL3" "x2/VSS" 1.81607
+cap "x1/x4/BL2" "x2/x2/x3/SL" 33.2568
+cap "x1/x4/x2/XR1/BE" "x1/x4/BL2" -0.243653
+cap "x1/x4/x2/XR1/BE" "x2/VSS" 22.8854
+cap "x1/x4/x4/SL" "x2/VSS" 0.0483898
+cap "x2/WL3" "x1/x4/BL2" 313.17
+cap "x1/x4/BL2" "x2/VSS" 25.7779
+cap "x2/WL3" "x2/VSS" 7.47982
+cap "x2/VSS" "x2/x2/BL1" -7.10543e-15
+cap "x2/x2/x3/SL" "x1/x4/BL2" 33.36
+cap "x2/x2/x3/SL" "x2/WL3" 1.03124
+cap "x2/VSS" "x1/x4/BL2" 1.44462
+cap "x2/WL3" "x2/VSS" 0.922443
+cap "x2/WL3" "x1/x4/x2/VSS" 0.0782665
+cap "x1/x4/x2/SL" "x2/VSS" 0.750876
+cap "x1/x4/x2/SL" "x2/WL3" -0.0244134
+cap "x1/x4/x2/SL" "x2/WL2" 0.228489
+cap "x1/x4/x2/SL" "x1/x4/x2/VSS" -0.234375
+cap "x2/VSS" "x1/x4/x2/XR1/BE" 3.6
+cap "x2/WL3" "x2/VSS" 1.53177
+cap "x1/x4/x2/VSS" "x2/VSS" 0.648818
+cap "x2/VSS" "x1/x4/BL2" 46.9882
+cap "x1/x4/x2/SL" "x2/VSS" 2.64959
+cap "x2/x2/x1/SL" "x1/x4/BL2" 33.2373
+cap "x2/WL3" "x2/VSS" 1.44958
+cap "x2/VSS" "x1/x4/x2/XR1/BE" 3.63559
+cap "x2/VSS" "x1/x4/BL2" 0.511601
+cap "x1/x4/BL2" "x2/x2/x1/SL" 33.4406
+cap "x1/WL2" "x1/VSS" 3.47422
+cap "x1/x2/x1/SL" "x1/WL2" 0.884886
+cap "x1/x3/WL2" "x1/x4/x2/SL" -0.15325
+cap "x1/x3/WL2" "x1/x3/x3/XR1/BE" 0.0419748
+cap "x1/x3/x3/XR1/BE" "x1/x4/x2/SL" -0.045328
+cap "x1/x3/WL2" "x1/x3/x4/VSS" 0.17652
+cap "x1/x4/x2/SL" "x1/x3/x4/XR1/BE" -0.459595
+cap "x2/VSS" "x1/x3/x4/VSS" 8.78397
+cap "x2/WL2" "x1/x4/x2/SL" 117.703
+cap "x1/x4/BL2" "x1/x3/x4/XR1/BE" -0.395189
+cap "x2/WL2" "x1/x4/BL2" 18.9879
+cap "x2/WL2" "x1/x3/x4/XR1/BE" 16.8959
+cap "x1/x4/BL1" "x2/WL2" 1.19198
+cap "x1/x3/x4/VSS" "x1/x4/x2/SL" -12.9592
+cap "x1/x4/BL2" "x1/x3/x4/VSS" -4.4829
+cap "x2/WL2" "x1/x3/x4/VSS" 102.217
+cap "x2/VSS" "x1/x3/x4/XR1/BE" 11.8887
+cap "x2/VSS" "x1/x4/BL2" 0.0280103
+cap "x2/VSS" "x2/WL2" 1.81607
+cap "x1/x4/BL1" "x1/x3/x4/VSS" -0.405357
+cap "x2/WL2" "x1/x4/BL2" 310.313
+cap "x1/x4/x2/SL" "x2/VSS" 0.629067
+cap "x2/VSS" "x1/x3/x4/XR1/BE" 11.9903
+cap "x2/WL2" "x2/VSS" 7.47982
+cap "x1/x4/BL2" "x2/x2/x1/SL" 33.2218
+cap "x1/x4/BL2" "x2/VSS" 30.956
+cap "x1/x4/BL2" "x1/x3/x4/XR1/BE" -0.243653
+cap "x2/x1/x3/XR1/TE" "x2/x1/x3/XR1/BE" 7.10543e-15
+cap "x2/x2/x1/SL" "x2/VSS" 1.13687e-13
+cap "x2/x2/x1/SL" "x2/WL2" 1.03124
+cap "x2/VSS" "x2/WL2" 0.922443
+cap "x2/x2/x1/SL" "x1/x4/BL2" 33.212
+cap "x1/x4/BL2" "x2/VSS" 1.16523
+cap "x2/x1/VSS" "x2/WL2" 1.53177
+cap "x1/x3/SL2" "x2/WL1" 0.471887
+cap "x1/x3/VSS" "x2/x1/VSS" 1.51391
+cap "x1/x3/x4/BL" "x2/WL2" 2.14286
+cap "x2/WL2" "x1/x3/SL2" 0.125415
+cap "x2/WL2" "x2/WL1" 0.0519028
+cap "x1/x3/VSS" "x1/x3/SL2" -0.395412
+cap "x1/x3/x4/BL" "x2/x1/VSS" 0.0280103
+cap "x2/x1/VSS" "x1/x3/SL2" 1.13922
+cap "x2/x1/VSS" "x1/x3/x4/XR1/BE" 14.4299
+cap "x1/x3/VSS" "x2/WL2" 0.0782665
+cap "x1/x3/x4/BL" "x2/WL2" 2.85714
+cap "x2/x1/SL1" "x1/x3/x4/BL" 33.2723
+cap "x2/x1/VSS" "x1/x3/x4/XR1/BE" 14.5307
+cap "x1/x3/SL2" "x2/x1/VSS" 1.04389
+cap "x2/x1/VSS" "x2/WL2" 1.44958
+cap "x2/x1/VSS" "x1/x3/x4/BL" 32.9598
+cap "x2/x1/SL1" "x2/x1/VSS" -5.68434e-14
+cap "x1/x3/x4/BL" "x2/x1/SL1" 33.5886
+cap "x1/x3/x4/BL" "x2/x1/VSS" 1.18078
+cap "x2/x1/x3/XR1/BE" "x2/x1/x3/BL" 1.42109e-14
+cap "x2/WL2" "x2/x1/x3/BL" -3.55271e-15
+cap "x1/x1/x3/SL" "x1/WL1" 0.921011
+cap "x1/x3/WL1" "x1/x3/x1/XR1/BE" 0.0419748
+cap "x1/x3/VSS" "x1/x3/WL1" 0.17652
+cap "x1/x3/x4/SL" "x1/x3/x1/XR1/BE" -0.045328
+cap "x1/x3/WL1" "x1/x3/x4/SL" -0.15325
+cap "x1/BL3" "x1/x3/VSS" -0.405357
+cap "x2/WL1" "x1/x3/x4/XM1/a_n50_n788#" 0.120157
+cap "x1/BL4" "x2/WL1" 9.3105
+cap "x2/WL1" "x1/x3/x4/XR1/BE" 0.151154
+cap "x1/x3/x4/SL" "x2/WL1" 117.762
+cap "x2/x1/VSS" "x1/x3/VSS" 3.35878
+cap "x1/x3/x2/XR1/BE" "x2/WL1" 15.938
+cap "x1/x3/x2/XR1/BE" "x1/BL4" -0.331099
+cap "x1/x3/x2/XR1/BE" "x1/x3/x4/SL" -0.459595
+cap "x2/WL1" "x1/x3/VSS" 101.192
+cap "x1/BL4" "x1/x3/VSS" -2.27178
+cap "x2/WL1" "x1/BL3" 1.19198
+cap "x1/x3/x4/SL" "x1/x3/VSS" -12.9592
+cap "x1/BL4" "x2/WL1" 302.152
+cap "x2/x1/VSS" "x1/BL4" 8.7406
+cap "x1/x3/x4/SL" "x2/x1/VSS" 0.145169
+cap "x1/x3/x2/XR1/BE" "x1/BL4" -0.243653
+cap "x2/x1/x3/SL" "x1/BL4" 33.2051
+cap "x2/x1/VSS" "x1/BL4" 1.56047
+cap "x2/WL1" "x2/x1/VSS" 0.922443
+cap "x1/BL4" "x2/x1/x3/SL" 33.2227
+cap "x2/WL1" "x2/x1/x3/SL" 1.07387
+cap "x2/WL1" "x1/x3/VSS" 0.0782665
+cap "x1/x3/VSS" "x1/x3/x2/SL" -0.0445849
+cap "x1/BL4" "x2/WL1" 11.8203
+cap "x2/WL1" "x1/x3/x2/SL" 0.144278
+cap "x1/BL4" "x1/x3/x2/XR1/BE" -0.0640901
+cap "x1/BL4" "x1/x3/VSS" -2.21112
+cap "x2/WL1" "x1/x3/x2/XR1/BE" 1.01688
+cap "x1/BL4" "x2/WL1" 11.0182
+cap "x1/BL4" "x2/x1/VSS" 0.836253
+cap "x1/BL4" "x2/x1/x1/SL" 32.9397
+cap "x2/BL1" "x2/x1/x1/XR1/BE" 2.84217e-14
+cap "x2/x1/x1/SL" "x2/x1/VSS" -1.13687e-13
+cap "x1/BL4" "x2/x1/x1/SL" 33.3242
+cap "x1/BL4" "x2/x1/VSS" 1.34717
+cap "x2/BL1" "x2/x1/VSS" -7.10543e-15
+cap "x1/BL2" "x1/BL1" -5.87302
+cap "x1/BL2" "x1/BL1" -5.87302
+cap "x1/BL4" "x1/BL3" -5.87302
+cap "x1/BL4" "x1/BL3" -5.87302
+cap "x2/BL1" "x2/BL2" -5.87302
+cap "x2/BL1" "x2/BL2" -5.87302
+cap "x2/BL3" "x2/BL4" -5.87302
+cap "x2/BL4" "x2/BL3" -5.87302
+merge "x1/x2/VSS" "x2/x2/x4/VSS" -4378.22 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -1248000 -13680 0 0 0 0 0 0 0 0 0 0
+merge "x2/x2/x4/VSS" "x2/x2/x3/VSS"
+merge "x2/x2/x3/VSS" "x2/x2/VSS"
+merge "x2/x2/VSS" "x1/x2/x4/VSS"
+merge "x1/x2/x4/VSS" "x3/x1/VSS"
+merge "x3/x1/VSS" "x4/x1/VSS"
+merge "x4/x1/VSS" "x3/VSS"
+merge "x3/VSS" "x4/VSS"
+merge "x4/VSS" "VSS"
+merge "x2/BL4" "BL8" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x2/VSUBS" "x1/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "x1/VSUBS" "x3/VSUBS"
+merge "x3/VSUBS" "x4/VSUBS"
+merge "x4/VSUBS" "VSUBS"
+merge "x2/x2/x3/BL" "x3/BL1" -686.345 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x3/BL1" "m3_25080_n5400#"
+merge "x1/SL2" "x4/x1/x2/SL" -611.431 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -2015 0 0 0 0 0 0
+merge "x4/x1/x2/SL" "x4/x1/x4/SL"
+merge "x4/x1/x4/SL" "m3_17060_n5700#"
+merge "x4/WL1" "WL5" -208.425 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
+merge "x2/SL4" "x3/x3/x2/SL" -557.509 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x3/x3/x2/SL" "m3_30820_n5700#"
+merge "x1/SL3" "x4/x3/x1/SL" -375.039 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x4/x3/x1/SL" "x4/x3/x3/SL"
+merge "x4/x3/x3/SL" "m3_20700_n5700#"
+merge "x4/WL2" "WL6" -146.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
+merge "x4/SL1" "SL1" -146.607 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/x2/x4/BL" "x4/BL2" -478.48 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x4/BL2" "m3_17720_n5400#"
+merge "x1/SL4" "x4/x3/x2/SL" -597.056 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x4/x3/x2/SL" "x4/x3/x4/SL"
+merge "x4/x3/x4/SL" "m3_22080_n5700#"
+merge "x4/WL3" "WL7" -146.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
+merge "x2/x2/x4/BL" "x3/BL2" -475.353 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x3/BL2" "m3_26460_n5400#"
+merge "x4/SL2" "SL2" -196.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -1000 0 0 0 0 0 0
+merge "x4/x3/x2/WL" "x3/WL1" -574.949 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x3/WL1" "x4/x3/WL1"
+merge "x4/x3/WL1" "m2_21800_n7560#"
+merge "x2/SL2" "x3/x1/x2/SL" -543.999 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x3/x1/x2/SL" "x3/x1/x4/SL"
+merge "x3/x1/x4/SL" "m3_25800_n5700#"
+merge "x4/WL4" "WL8" -179.33 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -1000 0 0 0 0 0 0 0 0
+merge "x2/x4/x3/BL" "x3/BL3" -688.265 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x3/BL3" "m3_30100_n5400#"
+merge "x4/SL3" "SL3" -144.572 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x4/x3/x4/WL" "x3/WL2" -501.118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x3/WL2" "x4/x3/WL2"
+merge "x4/x3/WL2" "m2_21800_n10500#"
+merge "x4/SL4" "SL4" -179.686 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/SL1" "x4/x1/x1/SL" -513.027 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x4/x1/x1/SL" "x4/x1/x3/SL"
+merge "x4/x1/x3/SL" "m3_15680_n5700#"
+merge "x1/x4/x4/WL" "x2/WL4" -579.952 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x2/WL4" "x1/x4/WL2"
+merge "x1/x4/WL2" "m2_21800_n4120#"
+merge "x1/x3/x4/WL" "x2/WL2" -501.118 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x2/WL2" "x1/x3/WL2"
+merge "x1/x3/WL2" "m2_21800_2180#"
+merge "x3/SL1" "SL5" -200.821 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x3/SL2" "SL6" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/BL1" "BL1" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x4/x4/x2/WL" "x3/WL3" -503.817 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x3/WL3" "x4/x4/WL1"
+merge "x4/x4/WL1" "m2_21800_n13860#"
+merge "x1/x4/x2/WL" "x2/WL3" -503.817 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x2/WL3" "x1/x4/WL1"
+merge "x1/x4/WL1" "m2_21800_n1180#"
+merge "x3/SL3" "SL7" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/BL2" "BL2" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x4/x4/x4/WL" "x3/WL4" -467.54 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2720 0 0 0 0 0 0 0 0
+merge "x3/WL4" "x4/x4/WL2"
+merge "x4/x4/WL2" "m2_21800_n16800#"
+merge "x3/SL4" "SL8" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/BL3" "BL3" -144.985 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/BL4" "BL4" -427.333 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/x2/x3/BL" "x4/BL1" -689.472 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x4/BL1" "m3_16340_n5400#"
+merge "x1/x4/x3/BL" "x4/BL3" -677.437 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x4/BL3" "m3_21360_n5400#"
+merge "x2/SL3" "x3/x3/x1/SL" -365.654 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x3/x3/x1/SL" "x3/x3/x3/SL"
+merge "x3/x3/x3/SL" "m3_29440_n5700#"
+merge "x1/x4/x4/BL" "x4/BL4" -1084.37 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x4/BL4" "m3_22740_n5400#"
+merge "x2/BL1" "BL5" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x2/x4/x4/BL" "x3/BL4" -434.249 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1810 0 0 0 0 0 0
+merge "x3/BL4" "m3_31480_n5400#"
+merge "x2/SL1" "x3/x1/x1/SL" -827.815 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -81000 -1610 0 0 0 0 0 0
+merge "x3/x1/x1/SL" "x3/x1/x3/SL"
+merge "x3/x1/x3/SL" "m3_24420_n5700#"
+merge "x2/BL2" "BL6" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/x3/x2/WL" "x2/WL1" -496.676 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -102000 -2320 0 0 0 0 0 0 0 0
+merge "x2/WL1" "x1/x3/WL1"
+merge "x1/x3/WL1" "m2_21800_5120#"
+merge "x2/BL3" "BL7" -144.173 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0
+merge "x1/WL1" "WL1" -146.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
+merge "x1/WL2" "WL2" -146.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
+merge "x1/WL3" "WL3" -146.41 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
+merge "x1/WL4" "WL4" -192.866 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -40000 -800 0 0 0 0 0 0 0 0
