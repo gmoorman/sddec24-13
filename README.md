@@ -1,1 +1,1 @@
-# reram 1t1r precheck test
+# Crossbar schematics and layout 
