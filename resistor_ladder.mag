@@ -1,0 +1,29 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1733717322
+<< metal1 >>
+rect -604 17014 -474 17344
+rect -660 15900 -460 16220
+rect -640 14860 -440 15180
+rect -620 13780 -420 14100
+rect -620 12740 -420 13060
+rect -620 11640 -420 11960
+rect -600 10580 -400 10900
+rect -620 9520 -420 9840
+rect -640 8460 -440 8780
+rect -660 7400 -460 7720
+rect -640 6320 -440 6640
+rect -640 5260 -440 5580
+rect -620 4200 -420 4520
+rect -640 3120 -440 3440
+rect -640 2060 -440 2380
+use sky130_fd_pr__res_high_po_0p35_DYNXDV  sky130_fd_pr__res_high_po_0p35_DYNXDV_0
+timestamp 1733717322
+transform 1 0 -553 0 1 17770
+box -35 -482 35 482
+use sky130_fd_pr__res_high_po_5p73_GUDMLL  sky130_fd_pr__res_high_po_5p73_GUDMLL_0
+timestamp 1733717322
+transform 1 0 -549 0 1 9132
+box -573 -7958 573 7958
+<< end >>

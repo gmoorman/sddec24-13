@@ -1,0 +1,39 @@
+* NGSPICE file created from resistor_ladder.ext - technology: sky130B
+
+.subckt sky130_fd_pr__res_high_po_5p73_GUDMLL a_n573_n3686# a_n573_n3154# a_n573_5390#
++ a_n573_3790# a_n573_4858# a_n573_6458# a_n573_50# a_n573_n4754# a_n573_n4222# a_n573_7526#
++ a_n573_1118# a_n573_5926# a_n573_n6358# a_n573_n5290# a_n573_2186# a_n573_6994#
++ a_n573_586# a_n573_n5822# a_n573_n7426# a_n573_n6890# a_n573_n1018# a_n573_n482#
++ a_n573_3254# a_n573_1654# a_n573_n2086# a_n573_n2618# a_n573_n1550# a_n573_4322#
++ a_n573_2722# VSUBS
+X0 a_n573_n5290# a_n573_n5822# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X1 a_n573_2186# a_n573_1654# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X2 a_n573_n4222# a_n573_n4754# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X3 a_n573_n1018# a_n573_n1550# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X4 a_n573_n3154# a_n573_n3686# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X5 a_n573_n2086# a_n573_n2618# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X6 a_n573_7526# a_n573_6994# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X7 a_n573_6458# a_n573_5926# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X8 a_n573_50# a_n573_n482# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X9 a_n573_n7426# a_n573_n7958# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X10 a_n573_4322# a_n573_3790# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X11 a_n573_1118# a_n573_586# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X12 a_n573_n6358# a_n573_n6890# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X13 a_n573_3254# a_n573_2722# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+X14 a_n573_5390# a_n573_4858# VSUBS sky130_fd_pr__res_high_po_5p73 l=0.5
+.ends
+
+.subckt sky130_fd_pr__res_high_po_0p35_DYNXDV a_n35_n482# VSUBS
+X0 a_n35_50# a_n35_n482# VSUBS sky130_fd_pr__res_high_po_0p35 l=0.5
+.ends
+
+.subckt resistor_ladder
+Xsky130_fd_pr__res_high_po_5p73_GUDMLL_0 m1_n640_5260# m1_n640_6320# m1_n640_14860#
++ m1_n620_12740# m1_n620_13780# m1_n660_15900# m1_n620_9520# m1_n620_4200# m1_n640_5260#
++ m1_n604_17014# m1_n600_10580# m1_n640_14860# m1_n640_3120# m1_n620_4200# m1_n620_11640#
++ m1_n660_15900# m1_n620_9520# m1_n640_3120# m1_n640_2060# m1_n640_2060# m1_n640_8460#
++ m1_n640_8460# m1_n620_12740# m1_n600_10580# m1_n660_7400# m1_n640_6320# m1_n660_7400#
++ m1_n620_13780# m1_n620_11640# VSUBS sky130_fd_pr__res_high_po_5p73_GUDMLL
+Xsky130_fd_pr__res_high_po_0p35_DYNXDV_0 m1_n604_17014# VSUBS sky130_fd_pr__res_high_po_0p35_DYNXDV
+.ends
+
