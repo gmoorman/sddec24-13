@@ -1,0 +1,84 @@
+magic
+tech sky130B
+timestamp 1731797214
+<< metal1 >>
+rect 1520 -1010 2160 -910
+rect 1840 -2190 1940 -1010
+rect 980 -2290 1080 -2190
+rect 1300 -3590 1400 -2190
+rect 1520 -2290 2160 -2190
+rect 1840 -3490 1940 -2290
+rect 1520 -3590 2160 -3490
+rect 2380 -3590 2480 -2190
+rect 1840 -4770 1940 -3590
+rect 1520 -4870 2160 -4770
+<< metal2 >>
+rect 830 60 930 160
+rect 1510 60 2010 160
+rect 830 -870 930 -770
+rect 1370 -870 2010 -770
+rect 830 -1220 930 -1120
+rect 1510 -1220 2010 -1120
+rect 830 -2150 930 -2050
+rect 1370 -2150 2010 -2050
+rect 830 -2520 930 -2420
+rect 1510 -2520 2010 -2420
+rect 830 -3450 930 -3350
+rect 1370 -3450 2010 -3350
+rect 830 -3800 930 -3700
+rect 1510 -3800 2010 -3700
+rect 830 -4730 930 -4630
+rect 1370 -4730 2010 -4630
+<< metal3 >>
+rect 1300 60 1400 160
+rect 1840 60 1940 160
+rect 2380 60 2480 160
+rect 2920 60 3020 160
+rect 1300 -2520 1400 -1660
+rect 1840 -2520 1940 -1660
+rect 2380 -2520 2480 -1660
+rect 2920 -2520 3020 -1660
+use 2x2  x1
+timestamp 1731452249
+transform 1 0 150 0 1 -1110
+box 680 -1210 1795 1275
+use 2x2  x2
+timestamp 1731452249
+transform 1 0 150 0 1 -3690
+box 680 -1210 1795 1275
+use 2x2  x3
+timestamp 1731452249
+transform 1 0 1230 0 1 -1110
+box 680 -1210 1795 1275
+use 2x2  x4
+timestamp 1731452249
+transform 1 0 1230 0 1 -3690
+box 680 -1210 1795 1275
+<< labels >>
+flabel metal2 830 -4730 930 -4630 0 FreeSans 128 0 0 0 WL4
+port 10 nsew
+flabel metal2 830 -3450 930 -3350 0 FreeSans 128 0 0 0 WL3
+port 11 nsew
+flabel metal2 830 -2150 930 -2050 0 FreeSans 128 0 0 0 WL2
+port 8 nsew
+flabel metal2 830 -870 930 -770 0 FreeSans 128 0 0 0 WL1
+port 9 nsew
+flabel metal2 830 -3800 930 -3700 0 FreeSans 128 0 0 0 SL4
+port 6 nsew
+flabel metal2 830 -2520 930 -2420 0 FreeSans 128 0 0 0 SL3
+port 7 nsew
+flabel metal2 830 -1220 930 -1120 0 FreeSans 128 0 0 0 SL2
+port 2 nsew
+flabel metal2 830 60 930 160 0 FreeSans 128 0 0 0 SL1
+port 3 nsew
+flabel metal3 2920 60 3020 160 0 FreeSans 128 0 0 0 BL4
+port 5 nsew
+flabel metal3 2380 60 2480 160 0 FreeSans 128 0 0 0 BL3
+port 4 nsew
+flabel metal3 1840 60 1940 160 0 FreeSans 128 0 0 0 BL2
+port 1 nsew
+flabel metal3 1300 60 1400 160 0 FreeSans 128 0 0 0 BL1
+port 0 nsew
+flabel metal1 980 -2290 1080 -2190 0 FreeSans 128 0 0 0 VSS
+port 12 nsew
+<< end >>

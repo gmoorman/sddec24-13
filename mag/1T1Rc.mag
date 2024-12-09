@@ -1,0 +1,8 @@
+magic
+tech sky130B
+timestamp 1730401023
+use 1T1R  1T1R_0
+timestamp 1730401023
+transform 1 0 180 0 1 -210
+box -100 210 220 1415
+<< end >>

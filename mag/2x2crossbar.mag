@@ -1,0 +1,49 @@
+magic
+tech sky130B
+timestamp 1727400052
+<< metal1 >>
+rect 80 80 180 270
+rect 770 80 870 270
+rect -360 -20 870 80
+rect -360 -1190 -260 -20
+rect -360 -1300 870 -1190
+<< metal2 >>
+rect -230 310 720 410
+rect -230 -1160 720 -1060
+<< metal3 >>
+rect 70 -1490 170 1340
+rect 400 -770 500 1350
+rect 760 -1490 860 1340
+rect 1090 -770 1190 1340
+use 1T1R  x1
+timestamp 1727400052
+transform 1 0 110 0 1 -70
+box -180 210 395 1415
+use 1T1R  x2
+timestamp 1727400052
+transform 1 0 800 0 1 -70
+box -180 210 395 1415
+use 1T1R  x3
+timestamp 1727400052
+transform 1 0 110 0 1 -1540
+box -180 210 395 1415
+use 1T1R  x4
+timestamp 1727400052
+transform 1 0 800 0 1 -1540
+box -180 210 395 1415
+<< labels >>
+flabel metal2 -230 310 -130 410 0 FreeSans 128 0 0 0 WL1
+port 3 nsew
+flabel metal3 400 1250 500 1350 0 FreeSans 128 0 0 0 BL1
+port 1 nsew
+flabel metal3 70 -1490 170 -1390 0 FreeSans 128 0 0 0 SL1
+port 5 nsew
+flabel metal3 760 -1490 860 -1390 0 FreeSans 128 0 0 0 SL2
+port 6 nsew
+flabel metal3 1090 1240 1190 1340 0 FreeSans 128 0 0 0 BL2
+port 0 nsew
+flabel metal2 -230 -1160 -130 -1060 0 FreeSans 128 0 0 0 WL2
+port 4 nsew
+flabel metal1 -360 -20 -260 80 0 FreeSans 128 0 0 0 VSS
+port 2 nsew
+<< end >>

@@ -1,0 +1,22 @@
+magic
+tech sky130B
+timestamp 1725989690
+<< error_p >>
+rect -15 -146 -12 -143
+rect 82 -146 85 -143
+rect -18 -149 -15 -146
+rect 85 -149 88 -146
+rect -18 -246 -15 -243
+rect 85 -246 88 -243
+rect -15 -249 -12 -246
+rect 82 -249 85 -246
+<< metal1 >>
+rect -15 -246 85 -146
+<< reram >>
+rect -15 -246 85 -146
+<< labels >>
+flabel metal1 -15 -246 85 -146 0 FreeSans 128 0 0 0 BE
+port 1 nsew
+flabel reram -15 -246 85 -146 0 FreeSans 128 0 0 0 TE
+port 0 nsew
+<< end >>
