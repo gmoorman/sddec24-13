@@ -1,0 +1,56 @@
+timestamp 1733215642
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+use sky130_fd_pr__pfet_01v8_MJB5SZ sky130_fd_pr__pfet_01v8_MJB5SZ_2 1 0 843 0 1 724
+use sky130_fd_pr__pfet_01v8_MJB5SZ sky130_fd_pr__pfet_01v8_MJB5SZ_0 1 0 287 0 1 350
+use sky130_fd_pr__pfet_01v8_MJB5SZ sky130_fd_pr__pfet_01v8_MJB5SZ_1 1 0 69 0 1 348
+port "out" 3 798 214 894 302 m1
+port "VDD" 1 556 942 652 1030 m1
+port "VSS" 4 608 72 704 160 m1
+node "m1_310_378#" 1 2.59541 310 378 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 304 92 0 0 0 0 0 0 0 0 0 0
+node "m1_784_444#" 0 1.64311 784 444 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 4788 328 0 0 0 0 0 0 0 0 0 0
+node "out" 2 18.9012 798 214 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 34228 1692 0 0 0 0 0 0 0 0 0 0
+node "m1_268_592#" 0 4.16815 268 592 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 5152 316 0 0 0 0 0 0 0 0 0 0
+node "m1_38_592#" 0 22.1499 38 592 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 9360 432 0 0 0 0 0 0 0 0 0 0
+node "VDD" 1 60.0273 556 942 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 18720 796 0 0 0 0 0 0 0 0 0 0
+node "VSS" 22602 8898 608 72 m1 0 0 0 0 2175096 5956 0 0 188088 11064 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 188464 11072 121408 5988 0 0 0 0 0 0 0 0 0 0
+substrate "VSUBS" 0 0 -1073741817 -1073741817 space 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+cap "VSS" "m1_268_592#" 42.9333
+cap "VSS" "VDD" 109.648
+cap "out" "m1_310_378#" 0.519174
+cap "m1_310_378#" "m1_268_592#" 0.6875
+cap "m1_310_378#" "VSS" 32.5386
+cap "out" "m1_784_444#" 74.9597
+cap "m1_38_592#" "m1_268_592#" 22.4
+cap "out" "m1_268_592#" 3.23433
+cap "VSS" "m1_784_444#" 22.3779
+cap "m1_38_592#" "VSS" 55.564
+cap "out" "VSS" 318.711
+cap "out" "VDD" 10.2062
+cap "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_n33_n297#" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_15_n200#" 38.0184
+cap "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_15_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_15_n200#" 111.122
+cap "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_n33_n297#" "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_15_n200#" 103.606
+cap "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_15_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_n33_n297#" 1.94831
+cap "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_15_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_15_n200#" 24.873
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_n33_n297#" "m1_38_592#" -2316.68 0 0 0 0 -392400 -4908 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -14796 -1480 0 0 0 0 0 0 0 0 0 0
+merge "m1_38_592#" "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_15_n200#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_15_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_n73_n200#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_1/a_n73_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_1/w_n109_n300#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_1/w_n109_n300#" "sky130_fd_pr__pfet_01v8_MJB5SZ_0/a_n33_n297#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_0/a_n33_n297#" "m1_268_592#"
+merge "m1_268_592#" "sky130_fd_pr__pfet_01v8_MJB5SZ_0/a_15_n200#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_0/a_15_n200#" "m1_310_378#"
+merge "m1_310_378#" "sky130_fd_pr__pfet_01v8_MJB5SZ_0/a_n73_n200#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_0/a_n73_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_0/w_n109_n300#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_0/w_n109_n300#" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/w_n109_n300#"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_2/w_n109_n300#" "VSS"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_1/VSUBS" "sky130_fd_pr__pfet_01v8_MJB5SZ_0/VSUBS" 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_0/VSUBS" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/VSUBS"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_2/VSUBS" "VSUBS"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_n33_n297#" "m1_784_444#" -176.479 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -4544 -386 0 0 0 0 0 0 0 0 0 0
+merge "m1_784_444#" "VDD"
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_15_n200#" "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_n73_n200#" -249.569 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 -3520 -340 0 0 0 0 0 0 0 0 0 0
+merge "sky130_fd_pr__pfet_01v8_MJB5SZ_2/a_n73_n200#" "out"

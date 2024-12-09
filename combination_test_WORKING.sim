@@ -1,0 +1,41 @@
+| units: 500000 tech: sky130B format: MIT
+x CLK a_206_n3829# Voutplus VSS s=23200,916 d=23200,916 l=30 w=4000 x=1944 y=-3008 sky130_fd_pr__nfet_01v8
+x CLK a_206_n3009# Voutminus VSS s=23200,916 d=23200,916 l=30 w=4000 x=2224 y=-3828 sky130_fd_pr__nfet_01v8
+x Viominus VSS a_294_n6912# VSS s=23200,916 d=23200,916 l=30 w=4000 x=1384 y=-6911 sky130_fd_pr__nfet_01v8
+x CLK VDD Voutminus VDD s=23200,916 d=23200,916 l=30 w=4000 x=1945 y=-915 sky130_fd_pr__pfet_01v8
+x Vioplus VSS a_294_n7610# VSS s=23200,916 d=23200,916 l=30 w=4000 x=824 y=-6911 sky130_fd_pr__nfet_01v8
+x Voutplus VDD Voutminus VDD s=23200,916 d=23200,916 l=30 w=800 x=1665 y=-915 sky130_fd_pr__pfet_01v8
+x CLK VDD Voutplus VDD s=23200,916 d=23200,916 l=30 w=4000 x=1105 y=-915 sky130_fd_pr__pfet_01v8
+x Voutminus a_294_n7610# a_206_n3829# VSS s=23200,916 d=23200,916 l=30 w=800 x=1384 y=-5108 sky130_fd_pr__nfet_01v8
+x Voutminus VDD Voutplus VDD s=23200,916 d=23200,916 l=30 w=800 x=1385 y=-915 sky130_fd_pr__pfet_01v8
+x Voutplus a_294_n6912# a_206_n3009# VSS s=23200,916 d=23200,916 l=30 w=800 x=1664 y=-5108 sky130_fd_pr__nfet_01v8
+C a_206_n3009# CLK 3.6
+C CLK VDD 9.5
+C a_206_n3829# Voutplus 6.3
+C Viominus a_294_n6912# 2.1
+C a_206_n3009# Voutminus 7.0
+C CLK Voutminus 6.1
+C Voutminus VDD 10.0
+C CLK Voutplus 5.1
+C Voutplus VDD 10.2
+C Vioplus0 4.9
+R Vioplus 9599
+C Viominus0 3.2
+R Viominus 9582
+C Voutplus0 2.7
+R Voutplus 39858
+C CLK0 7.3
+R CLK 45351
+C Voutminus0 3.9
+R Voutminus 39870
+C VDD0 48.6
+R VDD 60592
+R VSS 58726
+C a_294_n6912#0 9.3
+R a_294_n6912# 14960
+C a_294_n7610#0 8.9
+R a_294_n7610# 14949
+C a_206_n3829#0 2.2
+R a_206_n3829# 14956
+C a_206_n3009#0 2.7
+R a_206_n3009# 14966

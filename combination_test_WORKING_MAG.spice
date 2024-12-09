@@ -1,0 +1,89 @@
+* NGSPICE file created from combination_test_WORKING.ext - technology: sky130B
+
+.subckt sky130_fd_pr__pfet_01v8_MJ75SZ a_15_n200# w_n109_n300# a_n33_n297# a_n73_n200#
+X0 a_15_n200# a_n33_n297# a_n73_n200# w_n109_n300# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PRFKA7 a_n33_n257# a_n73_n169# a_15_n169# VSUBS
+X0 a_15_n169# a_n33_n257# a_n73_n169# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_72KZQ8 a_n33_191# a_n73_n231# a_15_n231# VSUBS
+X0 a_15_n231# a_n33_191# a_n73_n231# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt sky130_fd_pr__nfet_01v8_PHZV97 a_15_n200# a_n73_n200# a_n33_n288# VSUBS
+X0 a_15_n200# a_n33_n288# a_n73_n200# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt combination_test_WORKING VDD CLK Voutplus Voutminus Vioplus Viominus VSS
+Xxm1 Voutplus VDD Voutminus VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm3 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm2 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm4 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm5 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm6 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm7 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm8 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm9 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm60 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm50 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm61 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm40 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm51 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm62 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm20 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm31 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm30 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm42 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm41 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm53 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm52 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm64 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm63 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm10 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm21 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm32 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm43 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm54 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm65 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm11 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm22 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm33 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm44 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm55 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm66 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm12 Voutminus VDD Voutplus VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm23 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm34 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm56 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm67 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm24 Voutminus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm13 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm35 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm46 m1_178_n2384# m1_338_n7020# Voutplus VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm57 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm68 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm14 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm25 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm36 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm47 Voutplus m1_338_n7020# m1_178_n2384# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm58 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm15 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm26 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm37 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm48 Voutminus m1_338_n7176# m1_178_n3208# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm59 Vioplus VSS m1_338_n7176# VSS sky130_fd_pr__nfet_01v8_PRFKA7
+Xxm16 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm27 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm38 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm49 Viominus VSS m1_338_n7020# VSS sky130_fd_pr__nfet_01v8_72KZQ8
+Xxm18 Voutplus VDD Voutminus VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm17 Voutplus VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm29 Voutminus m1_178_n2384# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm28 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm39 Voutplus m1_178_n3208# CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm19 Voutminus VDD Voutplus VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xsky130_fd_pr__nfet_01v8_PHZV97_0 m1_178_n3208# m1_338_n7176# Voutminus VSS sky130_fd_pr__nfet_01v8_PHZV97
+.ends
+

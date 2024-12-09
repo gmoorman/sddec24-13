@@ -1,0 +1,12 @@
+* NGSPICE file created from shorted_test.ext - technology: sky130B
+
+.subckt sky130_fd_pr__pfet_01v8_MJB5SZ a_15_n200# w_n109_n300# a_n33_n297# a_n73_n200#
+X0 a_15_n200# a_n33_n297# a_n73_n200# w_n109_n300# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt shorted_test VDD out VSS
+Xsky130_fd_pr__pfet_01v8_MJB5SZ_0 VSS VSS VSS VSS sky130_fd_pr__pfet_01v8_MJB5SZ
+Xsky130_fd_pr__pfet_01v8_MJB5SZ_1 VSS VSS VSS VSS sky130_fd_pr__pfet_01v8_MJB5SZ
+Xsky130_fd_pr__pfet_01v8_MJB5SZ_2 out VSS VDD out sky130_fd_pr__pfet_01v8_MJB5SZ
+.ends
+

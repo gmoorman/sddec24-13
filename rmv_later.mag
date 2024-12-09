@@ -1,0 +1,40 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1733217602
+<< error_s >>
+rect 62 593 120 599
+rect 62 559 74 593
+rect 566 570 624 576
+rect 62 553 120 559
+rect 566 536 578 570
+rect 566 530 624 536
+rect 1040 496 1098 502
+rect 1040 462 1052 496
+rect 1040 456 1098 462
+rect 1460 108 1518 114
+rect 1460 74 1472 108
+rect 62 65 120 71
+rect 1460 68 1518 74
+rect 62 31 74 65
+rect 566 60 624 66
+rect 62 25 120 31
+rect 566 26 578 60
+rect 566 20 624 26
+use sky130_fd_pr__nfet_01v8_7B6TAC  sky130_fd_pr__nfet_01v8_7B6TAC_0
+timestamp 1733217602
+transform 1 0 1489 0 1 315
+box -73 -257 73 257
+use sky130_fd_pr__nfet_01v8_7KGU6Z  sky130_fd_pr__nfet_01v8_7KGU6Z_0
+timestamp 1733217602
+transform 1 0 595 0 1 298
+box -73 -288 73 288
+use sky130_fd_pr__nfet_01v8_PL356Z  sky130_fd_pr__nfet_01v8_PL356Z_0
+timestamp 1733217602
+transform 1 0 1069 0 1 255
+box -73 -257 73 257
+use sky130_fd_pr__pfet_01v8_MJ75SZ  sky130_fd_pr__pfet_01v8_MJ75SZ_0
+timestamp 1733217602
+transform 1 0 91 0 1 312
+box -109 -300 109 300
+<< end >>

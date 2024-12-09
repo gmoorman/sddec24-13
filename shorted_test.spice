@@ -1,0 +1,8 @@
+** sch_path: /home/jaxie963/caravel_pls_man_analog/caravel_user_project_analog/xschem/shorted_test.sch
+.subckt shorted_test VSS out VDD
+*.PININFO VSS:B out:B VDD:B
+XM1 out VDD out VSS sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+XM2 GND GND GND GND sky130_fd_pr__pfet_01v8 L=0.15 W=1 nf=1 m=1
+.ends
+.GLOBAL GND
+.end

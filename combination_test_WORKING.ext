@@ -1,0 +1,132 @@
+timestamp 0
+version 8.3
+tech sky130B
+style ngspice()
+scale 1000 1 500000
+resistclasses 4400000 2200000 950000 3050000 120000 197000 114000 191000 120000 197000 114000 191000 48200 319800 2000000 48200 48200 12800 125 125 47 47 29 5
+parameters sky130_fd_pr__nfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+parameters sky130_fd_pr__pfet_01v8 l=l w=w a1=as p1=ps a2=ad p2=pd
+port "Vioplus" 6 154 -6156 254 -6056 m1
+port "Viominus" 7 2750 -6256 2850 -6156 m1
+port "Voutplus" 4 34 -1400 134 -1300 m1
+port "CLK" 3 3274 -1892 3374 -1792 m1
+port "Voutminus" 5 2368 -1448 2468 -1348 m1
+port "VDD" 1 706 670 806 770 m1
+port "VSS" 8 3184 -7120 3284 -7020 m1
+node "Vioplus" 9599 4891.94 154 -6156 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177960 11600 0 0 22440 2000 294124 19416 0 0 0 0 0 0 0 0 0 0
+node "Viominus" 9582 3204.1 2750 -6256 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 177960 11600 0 0 22440 2000 94460 5232 331048 12508 0 0 0 0 0 0 0 0
+node "a_294_n6912#" 14960 9310.02 294 -6912 ndif 0 0 0 0 0 0 0 0 278400 10992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166464 10608 414540 17176 454060 17932 0 0 0 0 0 0 0 0
+node "a_294_n7610#" 14949 8907.9 294 -7610 ndif 0 0 0 0 0 0 0 0 278400 10992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166464 10608 444321 18366 181712 7568 0 0 0 0 0 0 0 0
+node "a_206_n3829#" 14956 2176 206 -3829 ndif 0 0 0 0 0 0 0 0 278400 10992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166464 10608 472834 22186 157672 6260 0 0 0 0 0 0 0 0
+node "a_206_n3009#" 14966 2669.53 206 -3009 ndif 0 0 0 0 0 0 0 0 278400 10992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 166464 10608 433235 21060 377444 14912 0 0 0 0 0 0 0 0
+node "Voutplus" 39858 2739.17 34 -1400 m1 0 0 0 0 0 0 0 0 232000 9160 278400 10992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84972 5300 0 0 320892 20848 944826 40572 430408 17296 0 0 0 0 0 0 0 0
+node "CLK" 4694 7343.68 3274 -1892 m1 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 892080 54960 0 0 179520 16000 499072 30972 1031692 39872 0 0 0 0 0 0 0 0
+node "Voutminus" 39870 3894.23 2368 -1448 m1 0 0 0 0 0 0 0 0 232000 9160 278400 10992 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 84972 5300 0 0 320892 20848 908162 39042 755588 29548 0 0 0 0 0 0 0 0
+node "VDD" 56144 48578.7 706 670 m1 0 0 0 0 13070280 14732 0 0 0 0 556800 21984 1699792 27416 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 1703728 48632 3053144 65492 547904 10088 384400 3720 363608 3616 0 0 0 0
+substrate "VSS" 0 0 3184 -7120 m1 0 0 0 0 0 0 0 0 464000 18320 0 0 0 0 2640208 42584 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 2406640 60264 3271856 68308 463336 8724 384400 3720 363608 3616 0 0 0 0
+cap "Voutminus" "Vioplus" 0.16376
+cap "Voutminus" "a_294_n6912#" 42.1606
+cap "Voutminus" "a_206_n3009#" 6951.17
+cap "a_294_n7610#" "Voutminus" 163.493
+cap "a_206_n3829#" "Voutplus" 6288.04
+cap "a_206_n3829#" "CLK" 1271.09
+cap "a_206_n3829#" "Viominus" 0.919078
+cap "a_206_n3829#" "Vioplus" 0.117078
+cap "VDD" "Voutplus" 10203.8
+cap "VDD" "CLK" 9476.72
+cap "Voutplus" "CLK" 5050.98
+cap "a_206_n3829#" "a_294_n6912#" 524.867
+cap "a_206_n3829#" "a_206_n3009#" 825.181
+cap "Voutplus" "Viominus" 3.51931
+cap "Voutplus" "Vioplus" 7.05533
+cap "Viominus" "Vioplus" 746.227
+cap "a_206_n3829#" "a_294_n7610#" 713.71
+cap "VDD" "a_206_n3009#" 9.31379
+cap "Voutplus" "a_294_n6912#" 189.331
+cap "Voutplus" "a_206_n3009#" 1198.09
+cap "a_294_n6912#" "CLK" 0.195681
+cap "a_206_n3009#" "CLK" 3612.45
+cap "a_206_n3009#" "Viominus" 0.87704
+cap "Viominus" "a_294_n6912#" 2137.71
+cap "a_206_n3009#" "Vioplus" 10.3352
+cap "a_294_n6912#" "Vioplus" 367.026
+cap "a_294_n7610#" "Voutplus" 66.9691
+cap "a_294_n7610#" "CLK" 0.0426859
+cap "a_294_n7610#" "Viominus" 295.933
+cap "a_294_n7610#" "Vioplus" 741.35
+cap "a_206_n3829#" "Voutminus" 954.406
+cap "a_206_n3009#" "a_294_n6912#" 755.375
+cap "a_294_n7610#" "a_294_n6912#" 905.716
+cap "a_294_n7610#" "a_206_n3009#" 231.344
+cap "VDD" "Voutminus" 9968.77
+cap "Voutminus" "Voutplus" 1360.36
+cap "Voutminus" "CLK" 6140.09
+cap "Voutminus" "Viominus" 3.51993
+device msubckt sky130_fd_pr__nfet_01v8 2784 -7610 2785 -7609 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2504 -7610 2505 -7609 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2224 -7610 2225 -7609 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1944 -7610 1945 -7609 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1664 -7610 1665 -7609 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1384 -7610 1385 -7609 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1104 -7610 1105 -7609 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 824 -7610 825 -7609 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 544 -7610 545 -7609 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 264 -7610 265 -7609 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2784 -6912 2785 -6911 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2504 -6912 2505 -6911 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2224 -6912 2225 -6911 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1944 -6912 1945 -6911 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1664 -6912 1665 -6911 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1384 -6912 1385 -6911 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1104 -6912 1105 -6911 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 824 -6912 825 -6911 l=30 w=400 "VSS" "Vioplus" 60 0 "VSS" 400 23200,916 "a_294_n7610#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 544 -6912 545 -6911 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 264 -6912 265 -6911 l=30 w=400 "VSS" "Viominus" 60 0 "VSS" 400 23200,916 "a_294_n6912#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1663 -5967 1664 -5966 l=30 w=400 "VSS" "Voutminus" 60 0 "a_294_n7610#" 400 23200,916 "a_206_n3829#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1383 -5967 1384 -5966 l=30 w=400 "VSS" "Voutplus" 60 0 "a_294_n6912#" 400 23200,916 "a_206_n3009#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1664 -5109 1665 -5108 l=30 w=400 "VSS" "Voutplus" 60 0 "a_294_n6912#" 400 23200,916 "a_206_n3009#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1384 -5109 1385 -5108 l=30 w=400 "VSS" "Voutminus" 60 0 "a_294_n7610#" 400 23200,916 "a_206_n3829#" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2784 -3829 2785 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2504 -3829 2505 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2224 -3829 2225 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1944 -3829 1945 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1664 -3829 1665 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1384 -3829 1385 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1104 -3829 1105 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 824 -3829 825 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 544 -3829 545 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 264 -3829 265 -3828 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2784 -3009 2785 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2504 -3009 2505 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 2224 -3009 2225 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1944 -3009 1945 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1664 -3009 1665 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1384 -3009 1385 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 1104 -3009 1105 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 824 -3009 825 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3829#" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 544 -3009 545 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__nfet_01v8 264 -3009 265 -3008 l=30 w=400 "VSS" "CLK" 60 0 "a_206_n3009#" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 3065 -916 3066 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2785 -916 2786 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2505 -916 2506 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2225 -916 2226 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1945 -916 1946 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1665 -916 1666 -915 l=30 w=400 "VDD" "Voutplus" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1385 -916 1386 -915 l=30 w=400 "VDD" "Voutminus" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1105 -916 1106 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 825 -916 826 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 545 -916 546 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 265 -916 266 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 -15 -916 -14 -915 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 3065 -200 3066 -199 l=30 w=400 "VDD" "Voutplus" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2785 -200 2786 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2505 -200 2506 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 2225 -200 2226 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1945 -200 1946 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1665 -200 1666 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutminus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1385 -200 1386 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 1105 -200 1106 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 825 -200 826 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 545 -200 546 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 265 -200 266 -199 l=30 w=400 "VDD" "CLK" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
+device msubckt sky130_fd_pr__pfet_01v8 -15 -200 -14 -199 l=30 w=400 "VDD" "Voutminus" 60 0 "VDD" 400 23200,916 "Voutplus" 400 23200,916
