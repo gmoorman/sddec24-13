@@ -1,0 +1,65 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -210 -50 -90 -50 {
+lab=#net1}
+N -310 -50 -210 -50 {
+lab=#net1}
+N -310 10 -310 50 {
+lab=#net2}
+N -310 110 -310 150 {
+lab=GND}
+N -190 40 -90 40 {
+lab=#net3}
+N -190 40 -190 190 {
+lab=#net3}
+N -190 230 -190 260 {
+lab=#net4}
+N -190 260 -90 260 {
+lab=#net4}
+N -30 260 50 260 {
+lab=#net5}
+N 80 0 180 0 {
+lab=#net6}
+N 180 0 180 260 {
+lab=#net6}
+N 110 260 180 260 {
+lab=#net6}
+N 180 320 180 340 {
+lab=GND}
+N -530 -20 -530 60 {
+lab=GND}
+N -530 120 -530 160 {
+lab=VSS}
+N -530 -150 -530 -80 {
+lab=VDD}
+N -620 30 -530 30 {
+lab=GND}
+N -10 -100 -10 -60 {
+lab=VDD}
+N -10 60 -10 90 {
+lab=VSS}
+C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/5TwithBuffer.sym} -20 -10 0 0 {name=x1}
+C {devices/vsource.sym} -310 -20 0 0 {name=V1 value=0 savecurrent=false}
+C {devices/vsource.sym} -310 80 0 0 {name=V2 value=0.9 savecurrent=false}
+C {devices/vsource.sym} -190 200 2 0 {name=V3 value=0 savecurrent=false}
+C {devices/vsource.sym} -60 260 3 0 {name=V4 value=0.9 savecurrent=false}
+C {devices/vsource.sym} 80 260 1 0 {name=V5 value=0.9 savecurrent=false}
+C {devices/capa.sym} 180 290 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} 180 340 0 0 {name=l1 lab=GND}
+C {devices/gnd.sym} -310 150 0 0 {name=l2 lab=GND}
+C {devices/vsource.sym} -530 -50 0 0 {name=V6 value=1.8 savecurrent=false}
+C {devices/vsource.sym} -530 90 0 0 {name=V7 value=0 savecurrent=false}
+C {devices/gnd.sym} -620 30 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} -530 -150 1 0 {name=p1 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} -530 160 3 0 {name=p2 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} -10 90 3 0 {name=p3 sig_type=std_logic lab=VSS}
+C {devices/lab_pin.sym} -10 -100 1 0 {name=p4 sig_type=std_logic lab=VDD}

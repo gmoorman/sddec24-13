@@ -1,0 +1,20 @@
+** sch_path: /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/xschem/userLib/Comparator.sch
+.subckt Comparator VDD VSS VIN V2 V1 CLK VDD VSS VREF
+*.PININFO VDD:B VSS:B VIN:I V2:O V1:O CLK:I VDD:B VSS:B VREF:I
+XM7 V2 CLK net3 VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=2
+XM9 V2 CLK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8 nf=1 m=2
+XM5 V2 V1 VDD VDD sky130_fd_pr__pfet_01v8 L=0.45 W=3 nf=1 m=2
+XM6 V1 V2 VDD VDD sky130_fd_pr__pfet_01v8 L=0.45 W=3 nf=1 m=2
+XM10 V1 CLK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=8 nf=1 m=2
+XM8 V1 CLK net4 VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=2
+XM4 net4 V2 net1 VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=2
+XM3 net3 V1 net2 VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=2
+XM1 net2 Voplus VSS VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=2
+XM2 net1 Vominus VSS VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=2
+XM11 Vominus VIN net5 VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=1
+XM12 Voplus VREF net5 VSS sky130_fd_pr__nfet_01v8 L=0.45 W=8 nf=1 m=1
+I0 net5 VSS 100u
+XR1 Vominus VDD VSS sky130_fd_pr__res_xhigh_po W=1 L=5 mult=1 m=1
+XR2 Voplus VDD VSS sky130_fd_pr__res_xhigh_po W=1 L=5 mult=1 m=1
+.ends
+.end

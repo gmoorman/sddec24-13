@@ -1,0 +1,108 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -50 -10 -50 20 {
+lab=#net1}
+N -200 -140 -90 -140 {
+lab=#net2}
+N -240 -230 -240 -170 {
+lab=VDD}
+N -240 -230 -50 -230 {
+lab=VDD}
+N -50 -230 -50 -170 {
+lab=VDD}
+N -240 -110 -240 -30 {
+lab=#net2}
+N -240 -170 -240 -140 {
+lab=VDD}
+N -50 -170 -50 -140 {
+lab=VDD}
+N -50 -110 -50 -70 {
+lab=#net3}
+N -50 150 -50 170 {
+lab=GND}
+N -240 30 -240 60 {
+lab=GND}
+N -510 -220 -510 -170 {
+lab=VDD}
+N -510 -110 -510 -70 {
+lab=GND}
+N -50 50 -50 80 {
+lab=#net4}
+N -150 50 -90 50 {
+lab=#net5}
+N -150 110 -150 130 {
+lab=GND}
+N -140 -140 -140 -90 {
+lab=#net2}
+N -240 -90 -140 -90 {
+lab=#net2}
+N -50 80 -50 90 {
+lab=#net4}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/reram.sym} -50 -40 0 0 {name=R1 model=sky130_fd_pr_reram__reram_cell spiceprefix=X Tfilament_0=3.8e-9}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} -70 50 0 0 {name=M1
+L=0.5
+W=7
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} -70 -140 0 0 {name=M2
+L=1
+W=5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} -220 -140 0 1 {name=M3
+L=1
+W=5
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/gnd.sym} -50 170 0 0 {name=l1 lab=GND}
+C {devices/isource.sym} -240 0 0 0 {name=I0 value=50u}
+C {devices/gnd.sym} -240 60 0 0 {name=l2 lab=GND}
+C {devices/vsource.sym} -510 -140 0 0 {name=V1 value=3.3 savecurrent=false}
+C {devices/gnd.sym} -510 -70 0 0 {name=l3 lab=GND}
+C {devices/lab_pin.sym} -510 -220 1 0 {name=p2 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} -150 -230 1 0 {name=p3 sig_type=std_logic lab=VDD}
+C {devices/vsource.sym} -150 80 0 0 {name=V2 value=2 savecurrent=false}
+C {devices/gnd.sym} -150 130 0 0 {name=l4 lab=GND}
+C {sky130_fd_pr/corner.sym} 310 -320 0 0 {name=CORNER only_toplevel=true corner=tt}
+C {devices/code_shown.sym} 320 -90 0 0 {name=spice only_toplevel=false value="
+.control
+save all
+tran 1u 1n
+plot Vmeas
+write ReRAMform.raw
+.endc
+.end
+"}
+C {devices/ammeter.sym} -50 120 0 0 {name=Vmeas savecurrent=true}

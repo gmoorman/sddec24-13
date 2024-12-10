@@ -1,0 +1,21 @@
+Error opening code model "REPLACE_ME_PREFIX/spice2poly.cm": REPLACE_ME_PREFIX/spice2poly.cm: cannot open shared object file: No such file or directory
+Error: Library REPLACE_ME_PREFIX/spice2poly.cm couldn't be loaded!
+Error opening code model "REPLACE_ME_PREFIX/analog.cm": REPLACE_ME_PREFIX/analog.cm: cannot open shared object file: No such file or directory
+Error: Library REPLACE_ME_PREFIX/analog.cm couldn't be loaded!
+Error opening code model "REPLACE_ME_PREFIX/digital.cm": REPLACE_ME_PREFIX/digital.cm: cannot open shared object file: No such file or directory
+Error: Library REPLACE_ME_PREFIX/digital.cm couldn't be loaded!
+Error opening code model "REPLACE_ME_PREFIX/xtradev.cm": REPLACE_ME_PREFIX/xtradev.cm: cannot open shared object file: No such file or directory
+Error: Library REPLACE_ME_PREFIX/xtradev.cm couldn't be loaded!
+Error opening code model "REPLACE_ME_PREFIX/xtraevt.cm": REPLACE_ME_PREFIX/xtraevt.cm: cannot open shared object file: No such file or directory
+Error: Library REPLACE_ME_PREFIX/xtraevt.cm couldn't be loaded!
+Error opening code model "REPLACE_ME_PREFIX/table.cm": REPLACE_ME_PREFIX/table.cm: cannot open shared object file: No such file or directory
+Error: Library REPLACE_ME_PREFIX/table.cm couldn't be loaded!
+
+Note: No compatibility mode selected!
+
+
+Circuit: ** sch_path: /home/gmoorman/caravel_user_project/untitled-3.sch
+
+Error: unknown subckt: x1 a b 0 vdd vdd vdd y sky130_fd_sc_hd__and2b_1
+    Simulation interrupted due to error!
+

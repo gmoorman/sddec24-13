@@ -1,0 +1,59 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -120 0 -120 30 {
+lab=0}
+N -120 30 -120 60 {
+lab=0}
+N -180 0 -160 0 {
+lab=Vgs}
+N -300 -0 -300 20 {
+lab=Vgs}
+N -300 0 -180 0 {
+lab=Vgs}
+N -300 70 -300 100 {
+lab=0}
+N -120 60 -120 100 {
+lab=0}
+N -300 100 -120 100 {
+lab=0}
+N -120 -240 -120 -190 {
+lab=0}
+N -120 -120 -120 -110 {
+lab=#net1}
+N -120 -140 -120 -120 {
+lab=#net1}
+N -120 -50 -120 -20 {
+lab=#net2}
+C {devices/vsource.sym} -300 40 0 0 {name=V1 value=0.9 savecurrent=false}
+C {devices/vsource.sym} -120 -160 2 0 {name=V3 value=1.8 savecurrent=false}
+C {devices/lab_pin.sym} -120 100 3 0 {name=p2 sig_type=std_logic lab=0}
+C {devices/lab_pin.sym} -120 -240 1 0 {name=p1 sig_type=std_logic lab=0}
+C {devices/code_shown.sym} 620 -20 0 0 {nname=s1 only_toplevel=false value="
+.op
+.dc V1 0 1.8 0.01
+.save @m.xm1.msky130_fd_pr__nfet_01v8[gm]
+.plot @m.xm1.msky130_fd_pr__nfet_01v8[gm]
+.save all
+"}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} -140 0 0 0 {name=M1
+L=0.15
+W=1
+nf=1 
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {sky130_fd_pr/corner.sym} 300 -230 0 0 {name=SPICE only_toplevel=true corner=tt}
+C {devices/ammeter.sym} -120 -80 0 0 {name=Id savecurrent=true}
+C {devices/lab_pin.sym} -220 0 1 0 {name=p3 sig_type=std_logic lab=Vgs}

@@ -1,0 +1,75 @@
+** sch_path: /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/xschem/userLib/ComparatorTB.sch
+**.subckt ComparatorTB
+x1 VDD V1 V2 CLK VIN VREF GND Comparator
+V2 VREF 0 0
+V3 VDD GND 3.3
+.save i(v3)
+V4 CLK GND 0
+V1 VIN GND 0
+XC1 V2 GND sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+XC2 V1 GND sky130_fd_pr__cap_mim_m3_1 W=1 L=1 MF=1 m=1
+**** begin user architecture code
+
+
+.op
+.save all
+
+
+
+
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/corners/tt.spice
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+**** end user architecture code
+**.ends
+
+* expanding   symbol:  dependencies/pdks/sky130B/libs.tech/xschem/userLib/Comparator.sym # of pins=7
+** sym_path: /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/xschem/userLib/Comparator.sym
+** sch_path: /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/xschem/userLib/Comparator.sch
+.subckt Comparator VDD V1 V2 CLK VIN VREF VSS
+*.iopin VDD
+*.iopin VSS
+*.ipin VIN
+*.ipin VREF
+*.opin V2
+*.opin V1
+*.ipin CLK
+XM7 V2 V1 VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM8 V2 CLK VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM9 V1 CLK VDD VDD sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM10 V1 V2 VDD net5 sky130_fd_pr__pfet_g5v0d10v5 L=0.5 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM5 V2 CLK net3 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.45 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM6 V1 CLK net4 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.45 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM1 net3 V1 net2 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.45 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM2 net4 V2 net1 VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.45 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM3 net2 VIN VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.45 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29' as='int((nf+2)/2) * W/nf * 0.29'
++ pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)' nrd='0.29 / W' nrs='0.29 / W'
++ sa=0 sb=0 sd=0 mult=1 m=1
+XM4 net1 VREF VSS VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.45 W=10 nf=1 ad='int((nf+1)/2) * W/nf * 0.29'
++ as='int((nf+2)/2) * W/nf * 0.29' pd='2*int((nf+1)/2) * (W/nf + 0.29)' ps='2*int((nf+2)/2) * (W/nf + 0.29)'
++ nrd='0.29 / W' nrs='0.29 / W' sa=0 sb=0 sd=0 mult=1 m=1
+.ends
+
+.GLOBAL GND
+.end
