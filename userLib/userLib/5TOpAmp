@@ -1,0 +1,111 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -50 -150 -50 -120 {
+lab=VDD}
+N -50 -190 -50 -150 {
+lab=VDD}
+N -50 -190 140 -190 {
+lab=VDD}
+N 140 -190 140 -150 {
+lab=VDD}
+N 140 -150 140 -120 {
+lab=VDD}
+N -50 -90 -50 -30 {
+lab=#net1}
+N 140 -90 140 -30 {
+lab=#net2}
+N 140 30 140 60 {
+lab=#net3}
+N 40 60 140 60 {
+lab=#net3}
+N -50 30 -50 60 {
+lab=#net3}
+N -50 60 40 60 {
+lab=#net3}
+N 40 90 40 120 {
+lab=GND}
+N 40 120 40 150 {
+lab=GND}
+N -10 -120 100 -120 {
+lab=#net1}
+N 40 -120 40 -70 {
+lab=#net1}
+N -50 -70 40 -70 {
+lab=#net1}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} -30 -120 0 1 {name=M4
+L=0.5
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_g5v0d10v5.sym} 120 -120 0 0 {name=M5
+L=0.5
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=pfet_g5v0d10v5
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} -70 0 0 0 {name=M6
+L=0.5
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} 160 0 0 1 {name=M1
+L=0.5
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_g5v0d10v5.sym} 20 90 0 0 {name=M2
+L=0.5
+W=1
+nf=1
+mult=1
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_g5v0d10v5
+spiceprefix=X
+}
+C {devices/gnd.sym} 40 150 0 0 {name=l1 lab=GND}
+C {devices/lab_pin.sym} 40 -190 1 0 {name=p1 sig_type=std_logic lab=VDD}

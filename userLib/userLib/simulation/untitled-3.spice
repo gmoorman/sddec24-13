@@ -1,0 +1,26 @@
+** sch_path: /home/gmoorman/caravel_user_project/untitled-3.sch
+**.subckt untitled-3
+x1 A B GND VDD VDD VDD Y sky130_fd_sc_hd__and2b_1
+V1 VDD GND 5
+V3 B GND 5
+V5 A GND pulse 0 5 '0.495/ 1e6 ' '0.01/1e6 ' '0.01/1e6 ' '0.49/1e6 ' '1/1e6 '
+**** begin user architecture code
+
+.param mc_mm_switch=0
+.param mc_pr_switch=0
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/corners/tt.spice
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical.spice
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/r+c/res_typical__cap_typical__lin.spice
+.include /home/gmoorman/caravel_user_project/dependencies/pdks/sky130B/libs.tech/ngspice/corners/tt/specialized_cells.spice
+
+
+
+.tran 100n 10u
+.save all
+
+
+**** end user architecture code
+**.ends
+.GLOBAL GND
+.GLOBAL VDD
+.end

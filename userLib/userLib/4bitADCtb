@@ -1,0 +1,76 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {}
+V {}
+S {}
+E {}
+N -1270 -170 -1210 -170 {
+lab=Vrefa}
+N -1270 -220 -1210 -220 {
+lab=Vin}
+N -1270 -20 -1230 -20 {
+lab=VDD}
+N -1270 -90 -1230 -90 {
+lab=Clk}
+N -1360 -220 -1330 -220 {
+lab=GND}
+N -1360 -220 -1360 -20 {
+lab=GND}
+N -1360 -20 -1330 -20 {
+lab=GND}
+N -1360 -170 -1330 -170 {
+lab=GND}
+N -1360 -90 -1330 -90 {
+lab=GND}
+N -600 -240 -550 -240 {
+lab=Y[16:1]}
+N -520 -240 -520 -230 {
+lab=Y[16:1]}
+N -550 -240 -520 -240 {
+lab=Y[16:1]}
+N -520 -170 -520 -140 {
+lab=GND}
+C {devices/lab_pin.sym} -1230 -90 2 0 {name=p6 lab=Clk}
+C {devices/lab_pin.sym} -1210 -220 2 0 {name=p5 lab=Vin
+}
+C {sky130_fd_pr/corner.sym} -800 50 0 0 {name=SPICE only_toplevel=true corner=tt}
+C {devices/vsource.sym} -1300 -20 1 0 {name=V1 value=1.8 savecurrent=false}
+C {devices/vsource.sym} -1300 -170 1 0 {name=V3 value=1.8 savecurrent=true
+}
+C {devices/lab_pin.sym} -1210 -170 2 0 {name=p44 sig_type=std_logic lab=Vrefa}
+C {devices/vsource.sym} -1300 -220 1 0 {name=V4 value="PWL (0 0 5u 1.8 10u 0" savecurrent=false}
+C {devices/gnd.sym} -1360 -20 0 1 {name=l10 lab=GND}
+C {devices/sqwsource.sym} -1300 -90 1 0 {name=V2 vhi=1.8 freq=1e6}
+C {devices/launcher.sym} -1530 150 0 0 {name=h15
+descr="Annotate OP" 
+tclcommand="set show_hidden_texts 1; xschem annotate_op"
+}
+C {devices/launcher.sym} -1520 200 0 0 {name=h3
+descr="Netlist & sim" 
+tclcommand="xschem netlist; xschem simulate"}
+C {devices/lab_pin.sym} -1230 -20 0 1 {name=p43 sig_type=std_logic lab=VDD}
+C {devices/code_shown.sym} -650 50 0 0 {name=SPICE1
+only_toplevel=false 
+value="
+
+
+.op
+.tran 100ns 10us
+.save all
+"}
+C {devices/param.sym} -980 160 0 0 {name=s1 value="L=3"}
+C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/4bitADC.sym} -750 -210 0 0 {name=x1}
+C {devices/lab_pin.sym} -900 -240 0 0 {name=p1 lab=Vin
+}
+C {devices/lab_pin.sym} -900 -220 0 0 {name=p2 sig_type=std_logic lab=Vrefa}
+C {devices/lab_pin.sym} -900 -200 0 0 {name=p3 lab=Clk}
+C {devices/lab_pin.sym} -900 -180 2 1 {name=p4 sig_type=std_logic lab=VDD}
+C {devices/lab_pin.sym} -550 -240 1 0 {name=p7 sig_type=std_logic lab=Y[16:1]
+}
+C {devices/capa.sym} -520 -200 0 0 {name=C1
+m=1
+value=1p
+footprint=1206
+device="ceramic capacitor"}
+C {devices/gnd.sym} -520 -140 0 0 {name=l1 lab=GND}
