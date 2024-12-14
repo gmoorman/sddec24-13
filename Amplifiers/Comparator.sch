@@ -203,6 +203,24 @@ N -550 180 -550 190 {
 lab=Viominus}
 N -600 -370 -530 -370 {
 lab=VDD}
+N -550 220 -530 220 {
+lab=VSS}
+N -450 220 -430 220 {
+lab=VSS}
+N -590 180 -590 220 {
+lab=Viominus}
+N -590 180 -580 180 {
+lab=Viominus}
+N -390 220 -370 220 {
+lab=Vioplus}
+N -370 180 -370 220 {
+lab=Vioplus}
+N -390 180 -370 180 {
+lab=Vioplus}
+N -630 180 -590 180 {
+lab=Viominus}
+N -370 180 -350 180 {
+lab=Vioplus}
 C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} -110 -160 0 1 {name=M3
 L=0.15
 W=2
@@ -330,24 +348,12 @@ C {devices/iopin.sym} -600 -280 2 0 {name=p15 lab=Vinminus}
 C {devices/iopin.sym} -600 -250 2 0 {name=p16 lab=CLK}
 C {devices/iopin.sym} 500 20 2 0 {name=p17 lab=Voutplus}
 C {devices/iopin.sym} 500 40 0 1 {name=p18 lab=Voutminus}
-C {devices/lab_pin.sym} -380 180 2 0 {name=p20 sig_type=std_logic lab=Vioplus}
+C {devices/lab_pin.sym} -350 180 2 0 {name=p20 sig_type=std_logic lab=Vioplus}
 C {devices/lab_pin.sym} -300 290 0 0 {name=p21 sig_type=std_logic lab=Vioplus}
 C {devices/lab_pin.sym} -490 -160 1 0 {name=p22 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -490 420 3 0 {name=p23 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -640 140 0 0 {name=p24 sig_type=std_logic lab=Vinminus}
-C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/res_xhigh_po.sym} -550 220 0 1 {name=R1
-W=1
-L=5
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/res_xhigh_po.sym} -430 220 0 0 {name=R2
-W=1
-L=5
-model=res_xhigh_po
-spiceprefix=X
-mult=1}
-C {devices/lab_pin.sym} -580 180 0 0 {name=p25 sig_type=std_logic lab=Viominus}
+C {devices/lab_pin.sym} -630 180 0 0 {name=p25 sig_type=std_logic lab=Viominus}
 C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/pfet_01v8.sym} 230 -160 0 1 {name=M1
 L=0.15
 W=2
@@ -441,3 +447,31 @@ C {devices/lab_pin.sym} -670 -30 1 0 {name=p39 sig_type=std_logic lab=Vb2}
 C {devices/lab_pin.sym} -360 140 2 0 {name=p45 sig_type=std_logic lab=Vinplus}
 C {devices/lab_wire.sym} 50 150 0 0 {name=p1 sig_type=std_logic lab=Voutplus}
 C {devices/lab_pin.sym} -90 150 2 0 {name=p3 sig_type=std_logic lab=Voutminus}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} -570 220 0 0 {name=M15
+L=1
+W=4
+nf=1 
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}
+C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/nfet_01v8.sym} -410 220 0 1 {name=M16
+L=1
+W=4
+nf=1 
+mult=4
+ad="'int((nf+1)/2) * W/nf * 0.29'" 
+pd="'2*int((nf+1)/2) * (W/nf + 0.29)'"
+as="'int((nf+2)/2) * W/nf * 0.29'" 
+ps="'2*int((nf+2)/2) * (W/nf + 0.29)'"
+nrd="'0.29 / W'" nrs="'0.29 / W'"
+sa=0 sb=0 sd=0
+model=nfet_01v8
+spiceprefix=X
+}

@@ -13,8 +13,8 @@ ypos2=2.1
 divy=1.8
 subdivy=1
 unity=1
-x1=3.30872e-24
-x2=4e-07
+x1=1.93715e-07
+x2=4.23938e-07
 divx=5
 subdivx=1
 xlabmag=1.0
@@ -55,37 +55,37 @@ lab=Clk}
 N 770 60 830 60 {
 lab=Vrefa}
 N 1130 40 1170 40 {
-lab=#net3}
+lab=#net2}
 N 1130 60 1170 60 {
-lab=#net4}
+lab=#net3}
 N 1130 80 1170 80 {
-lab=#net5}
+lab=#net4}
 N 1130 100 1170 100 {
-lab=#net6}
+lab=#net5}
 N 1130 120 1170 120 {
-lab=#net7}
+lab=#net6}
 N 1130 140 1170 140 {
-lab=#net8}
+lab=#net7}
 N 1130 160 1170 160 {
-lab=#net9}
+lab=#net8}
 N 1130 180 1170 180 {
-lab=#net10}
+lab=#net9}
 N 1130 200 1170 200 {
-lab=#net11}
+lab=#net10}
 N 1130 220 1170 220 {
-lab=#net12}
+lab=#net11}
 N 1130 240 1170 240 {
-lab=#net13}
+lab=#net12}
 N 1130 260 1170 260 {
-lab=#net14}
+lab=#net13}
 N 1130 280 1170 280 {
-lab=#net15}
+lab=#net14}
 N 1130 300 1170 300 {
-lab=#net16}
+lab=#net15}
 N 1130 320 1170 320 {
-lab=#net17}
+lab=#net16}
 N 1130 340 1170 340 {
-lab=#net18}
+lab=#net17}
 N 1470 0 1650 0 {
 lab=out0}
 N 1470 20 1590 20 {
@@ -113,7 +113,7 @@ lab=GND}
 N 1150 20 1170 20 {
 lab=VDD}
 N 640 40 830 40 {
-lab=#net19}
+lab=#net18}
 N 670 60 770 60 {
 lab=Vrefa}
 N -195 40 -125 40 {
@@ -123,9 +123,9 @@ lab=VDD}
 N -515 90 -515 110 {
 lab=GND}
 N 640 10 640 40 {
-lab=#net19}
+lab=#net18}
 N 450 10 640 10 {
-lab=#net19}
+lab=#net18}
 N -625 70 -595 70 {
 lab=Vinplus}
 N -515 -120 -515 -30 {
@@ -139,19 +139,19 @@ lab=GND}
 N 145 40 195 40 {
 lab=Vsample}
 N 365 10 455 10 {
-lab=#net19}
+lab=#net18}
 N 455 -150 455 10 {
-lab=#net19}
+lab=#net18}
 N 155 -150 455 -150 {
-lab=#net19}
+lab=#net18}
 N 275 60 275 100 {
 lab=GND}
 N 155 -20 195 -20 {
-lab=#net19}
+lab=#net18}
 N 155 -150 155 -20 {
-lab=#net19}
+lab=#net18}
 N 345 10 365 10 {
-lab=#net19}
+lab=#net18}
 N 275 -50 275 -40 {
 lab=V1v8}
 N 20 340 20 370 {

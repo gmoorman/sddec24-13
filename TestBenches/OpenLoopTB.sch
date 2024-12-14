@@ -61,10 +61,6 @@ N -20 -240 0 -240 {
 lab=#net1}
 N -130 -240 -100 -240 {
 lab=#net2}
-N -130 -240 -130 -120 {
-lab=#net2}
-N -130 -120 -80 -120 {
-lab=#net2}
 N -40 -240 -20 -240 {
 lab=#net1}
 N 60 -240 110 -240 {
@@ -95,16 +91,16 @@ N 20 -160 20 -150 {
 lab=VDD}
 N 60 -470 70 -470 {
 lab=VoutQ}
-N -160 -490 -130 -500 {
-lab=VoutQ}
-N -160 -500 -160 -490 {
-lab=VoutQ}
 N -110 -440 -90 -440 {
 lab=Vin+}
-N -80 -120 -60 -130 {
-lab=#net2}
 N -80 -70 -60 -70 {
 lab=Vin+}
+N -160 -500 -130 -500 {
+lab=VoutQ}
+N -130 -240 -130 -130 {
+lab=#net2}
+N -130 -130 -60 -130 {
+lab=#net2}
 C {devices/lab_pin.sym} -280 -260 2 0 {name=p5 lab=Vin+
 }
 C {devices/vsource.sym} -370 -60 1 0 {name=Vdd value=1.8 savecurrent=true}
@@ -262,7 +258,7 @@ descr="Netlist & sim"
 tclcommand="xschem netlist; xschem simulate"}
 C {devices/capa.sym} 150 -30 0 0 {name=C1
 m=1
-value=500f
+value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/vsource.sym} 30 -240 1 0 {name=V2 value="0 AC \{B\}" savecurrent=true}
@@ -274,11 +270,11 @@ C {devices/gnd.sym} -10 -400 0 0 {name=l3 lab=GND}
 C {devices/lab_pin.sym} -10 -550 3 1 {name=p10 sig_type=std_logic lab=VDD}
 C {devices/capa.sym} 100 -440 0 0 {name=C2
 m=1
-value=500f
+value=1p
 footprint=1206
 device="ceramic capacitor"}
 C {devices/gnd.sym} -20 -350 2 0 {name=l5 lab=GND}
 C {devices/vcvs.sym} -20 -310 2 0 {name=E1 value=1}
 C {devices/lab_pin.sym} 60 -290 2 0 {name=p6 sig_type=std_logic lab=VoutQ}
-C {xschem/userLib/2stageOpamp.sym} 10 -90 0 0 {name=x1}
-C {xschem/userLib/2stageOpamp.sym} -20 -460 0 0 {name=x2}
+C {xschem/Amplifiers/2stageOpamp.sym} -20 -460 0 0 {name=x1}
+C {xschem/Amplifiers/2stageOpamp.sym} 10 -90 0 0 {name=x2}

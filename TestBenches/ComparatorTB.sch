@@ -7,11 +7,11 @@ S {Cgg = 1.021899e-14}
 E {}
 N -90 -310 -90 -290 {
 lab=GND}
-N 300 -380 340 -380 {
+N 280 -380 320 -380 {
 lab=Voutplus}
-N 300 -360 340 -360 {
+N 280 -360 320 -360 {
 lab=Voutminus}
-N 340 -360 340 -310 {
+N 320 -360 320 -310 {
 lab=Voutminus}
 N -490 -80 -490 -50 {
 lab=GND}
@@ -31,7 +31,7 @@ N -300 -260 -300 -230 {
 lab=GND}
 N -600 -320 -600 -300 {
 lab=GND}
-N 340 -430 340 -380 {
+N 320 -430 320 -380 {
 lab=Voutplus}
 N -90 -600 -90 -430 {
 lab=VDD}
@@ -51,8 +51,8 @@ N -430 -80 -430 -50 {
 lab=GND}
 N -490 -50 -430 -50 {
 lab=GND}
-C {devices/lab_pin.sym} 340 -330 0 1 {name=p1 sig_type=std_logic lab=Voutminus}
-C {devices/lab_pin.sym} 340 -410 0 1 {name=p2 sig_type=std_logic lab=Voutplus}
+C {devices/lab_pin.sym} 320 -330 0 1 {name=p1 sig_type=std_logic lab=Voutminus}
+C {devices/lab_pin.sym} 320 -410 0 1 {name=p2 sig_type=std_logic lab=Voutplus}
 C {devices/lab_pin.sym} -250 -330 1 1 {name=p4 sig_type=std_logic lab=VREF}
 C {devices/lab_pin.sym} -110 -240 1 1 {name=p5 sig_type=std_logic lab=CLK}
 C {devices/gnd.sym} -90 -290 0 0 {name=l1 lab=GND}
@@ -95,14 +95,14 @@ C {devices/gnd.sym} -600 -300 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} -600 -350 0 0 {name=V1 value="pwl(0 0 1u 1)"
 
 savecurrent=false}
-C {devices/gnd.sym} 340 -490 2 0 {name=l4 lab=GND}
-C {devices/gnd.sym} 340 -250 0 0 {name=l5 lab=GND}
-C {devices/capa.sym} 340 -460 2 0 {name=C1
+C {devices/gnd.sym} 320 -490 2 0 {name=l4 lab=GND}
+C {devices/gnd.sym} 320 -250 0 0 {name=l5 lab=GND}
+C {devices/capa.sym} 320 -460 2 0 {name=C1
 m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {devices/capa.sym} 340 -280 0 0 {name=C2
+C {devices/capa.sym} 320 -280 0 0 {name=C2
 m=1
 value=1p
 footprint=1206
@@ -119,10 +119,10 @@ C {devices/lab_pin.sym} -240 -420 1 0 {name=p3 sig_type=std_logic lab=Vin}
 C {devices/lab_pin.sym} -600 -400 1 0 {name=p7 lab=Vin
 }
 C {devices/gnd.sym} -300 -230 0 0 {name=l6 lab=GND}
-C {xschem/userLib/Comparator.sym} -20 -340 0 0 {name=x1}
-C {xschem/userLib/SRlatch.sym} 150 -370 0 0 {name=x2}
 C {devices/vsource.sym} -430 -110 0 0 {name=V4 value=1.8 savecurrent=true}
 C {devices/lab_pin.sym} -10 -380 1 0 {name=p6 sig_type=std_logic lab=CompPlus}
 C {devices/lab_pin.sym} -10 -360 3 0 {name=p8 sig_type=std_logic lab=CompNeg}
 C {devices/lab_pin.sym} -490 -170 1 0 {name=p12 sig_type=std_logic lab=VDD}
 C {devices/vdd.sym} -430 -170 0 0 {name=l7 lab=V1v8}
+C {xschem/Amplifiers/Comparator.sym} -20 -340 0 0 {name=x6}
+C {xschem/StandardCells/SRlatch.sym} 130 -370 0 0 {name=x22}
