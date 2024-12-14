@@ -1,0 +1,7 @@
+** sch_path: /home/kivimagi/reram/caravel_user_project_analog/xschem/inverter.sch
+.subckt inverter Vout Vin VDD VSS
+*.PININFO Vout:O Vin:I VDD:B VSS:B
+XM1 Vout Vin VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+.ends
+.end

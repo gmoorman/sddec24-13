@@ -1,0 +1,18 @@
+** sch_path: /home/kivimagi/reram/caravel_user_project_analog/xschem/TransmissionGate.sch
+.subckt TransmissionGate Vout Vin En
+*.PININFO Vout:B Vin:B En:I
+XM1 Vin En Vout sky130_fd_pr__nfet_g5v0d10v5 L=2 W=10 nf=1 m=1
+XM2 Vout net1 Vin sky130_fd_pr__pfet_g5v0d10v5 L=2 W=10 nf=1 m=1
+x1 net1 En inverter
+.ends
+
+* expanding   symbol:  inverter.sym # of pins=2
+** sym_path: /home/kivimagi/reram/caravel_user_project_analog/xschem/inverter.sym
+** sch_path: /home/kivimagi/reram/caravel_user_project_analog/xschem/inverter.sch
+.subckt inverter Vout Vin
+*.PININFO Vout:O Vin:I VDD:B VSS:B
+XM1 Vout Vin VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=1 nf=1 m=1
+XM3 Vout Vin VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=1
+.ends
+
+.end

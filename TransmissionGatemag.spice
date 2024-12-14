@@ -1,0 +1,30 @@
+* NGSPICE file created from TransmissionGate.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_648S5X a_n73_n100# a_n33_n188# a_15_n100# a_n175_n274#
+X0 a_15_n100# a_n33_n188# a_n73_n100# a_n175_n274# sky130_fd_pr__nfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.15
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_XGAKDL a_15_n200# w_n211_n419# a_n33_n297# a_n73_n200#
+X0 a_15_n200# a_n33_n297# a_n73_n200# w_n211_n419# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt inverter Vout Vin VDD VSS
+XXM1 Vout Vin VSS VSS sky130_fd_pr__nfet_01v8_648S5X
+XXM3 VDD VDD Vin Vout sky130_fd_pr__pfet_01v8_XGAKDL
+.ends
+
+.subckt sky130_fd_pr__nfet_g5v0d10v5_PXKL9Z a_200_n1000# a_n200_n1088# a_n392_n1222#
++ a_n258_n1000#
+X0 a_200_n1000# a_n200_n1088# a_n258_n1000# a_n392_n1222# sky130_fd_pr__nfet_g5v0d10v5 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=2
+.ends
+
+.subckt sky130_fd_pr__pfet_g5v0d10v5_V6BEPM a_200_n1000# a_n258_n1000# a_n200_n1097#
+X0 a_200_n1000# a_n200_n1097# a_n258_n1000# w_n458_n1297# sky130_fd_pr__pfet_g5v0d10v5 ad=2.9 pd=20.58 as=2.9 ps=20.58 w=10 l=2
+.ends
+
+.subckt TransmissionGate Vout Vin En
+Xx1 x1/Vout x1/Vin x1/VDD VSUBS inverter
+XXM1 Vout En VSUBS Vin sky130_fd_pr__nfet_g5v0d10v5_PXKL9Z
+XXM2 Vout Vin x1/Vout sky130_fd_pr__pfet_g5v0d10v5_V6BEPM
+.ends
+
