@@ -1,0 +1,11 @@
+* NGSPICE file created from test_mult_1.ext - technology: sky130B
+
+.subckt sky130_fd_pr__pfet_01v8_UE6DPA a_n50_n197# a_50_n100# w_n144_n200# a_n108_n100#
+X0 a_50_n100# a_n50_n197# a_n108_n100# w_n144_n200# sky130_fd_pr__pfet_01v8 ad=0.29 pd=2.58 as=0.29 ps=2.58 w=1 l=0.5
+.ends
+
+.subckt test_mult_1 VDD input_test VSS
+Xxm1 input_test xm1/a_50_n100# xm2/w_n144_n200# VDD sky130_fd_pr__pfet_01v8_UE6DPA
+Xxm2 input_test VSS xm2/w_n144_n200# xm2/a_n108_n100# sky130_fd_pr__pfet_01v8_UE6DPA
+.ends
+

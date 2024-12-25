@@ -1,0 +1,51 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1731170357
+<< metal1 >>
+rect 628 893 1466 922
+rect 264 704 350 714
+rect 628 704 657 893
+rect 782 704 874 714
+rect 264 602 350 612
+rect 265 462 347 602
+rect 206 262 406 462
+rect 628 164 657 618
+rect 782 608 874 618
+rect 1100 656 1129 660
+rect 1437 656 1466 893
+rect 1100 627 1466 656
+rect 814 577 843 608
+rect 906 577 935 588
+rect 814 548 935 577
+rect 814 186 843 548
+rect 906 156 935 548
+rect 1100 228 1129 627
+rect 1437 478 1466 627
+rect 1362 278 1562 478
+rect 703 -204 758 -95
+rect 994 -204 1049 -97
+rect 703 -259 1049 -204
+rect 703 -446 758 -259
+rect 630 -646 830 -446
+<< via1 >>
+rect 264 618 874 704
+rect 264 612 350 618
+<< metal2 >>
+rect 254 612 264 704
+rect 874 618 884 704
+rect 350 612 360 618
+use sky130_fd_pr__pfet_01v8_PCCDPC  sky130_fd_pr__pfet_01v8_PCCDPC_0
+timestamp 1731138356
+transform 1 0 738 0 1 470
+box -144 -618 424 -18
+<< labels >>
+flabel metal1 630 -646 830 -446 0 FreeSans 256 0 0 0 input_test
+port 1 nsew
+flabel metal1 206 262 406 462 0 FreeSans 256 0 0 0 VDD
+port 0 nsew
+flabel metal1 1362 278 1562 478 0 FreeSans 256 0 0 0 VSS
+port 2 nsew
+<< properties >>
+string FIXED_BBOX -472 -1268 2992 872
+<< end >>

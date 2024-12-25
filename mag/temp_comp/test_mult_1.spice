@@ -1,0 +1,6 @@
+** sch_path: /home/jaxie963/caravel_pls_man_analog/caravel_user_project_analog/xschem/test_mult_1.sch
+.subckt test_mult_1 VDD input_test VSS
+*.PININFO VDD:B input_test:B VSS:B
+XM1 VSS input_test VDD VDD sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 m=2
+.ends
+.end

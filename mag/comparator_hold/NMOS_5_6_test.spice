@@ -1,0 +1,7 @@
+** sch_path: /home/jaxie963/caravel_pls_man_analog/caravel_user_project_analog/xschem/NMOS_5_6_test.sch
+.subckt NMOS_5_6_test CLK VSS voutminus voutplus M7_net M8_net
+*.PININFO CLK:B VSS:B voutminus:B voutplus:B M7_net:B M8_net:B
+XM7 voutplus CLK M7_net VSS sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 m=1
+XM8 voutminus CLK M8_net VSS sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 m=1
+.ends
+.end

@@ -1,0 +1,33 @@
+* NGSPICE file created from PMOS_test.ext - technology: sky130B
+
+.subckt sky130_fd_pr__pfet_01v8_MJ75SZ a_15_n200# w_n109_n300# a_n33_n297# a_n73_n200#
+X0 a_15_n200# a_n33_n297# a_n73_n200# w_n109_n300# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt PMOS_test VDD M5_net CLK M6_net
+Xxm1 M5_net VDD M6_net VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm3 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm2 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm4 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm5 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm6 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm7 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm8 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm9 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm20 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm10 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm21 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm11 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm22 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm12 M6_net VDD M5_net VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm23 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm24 M6_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm13 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm14 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm15 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm16 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm18 M5_net VDD M6_net VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm17 M5_net VDD CLK VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+Xxm19 M6_net VDD M5_net VDD sky130_fd_pr__pfet_01v8_MJ75SZ
+.ends
+

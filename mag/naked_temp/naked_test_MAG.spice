@@ -1,0 +1,13 @@
+* NGSPICE file created from naked_test.ext - technology: sky130B
+
+.subckt sky130_fd_pr__pfet_01v8_8B6PNQ
+X0 a_50_n518# a_n50_n615# a_n108_n518# w_n144_n618# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+X1 a_330_n518# a_230_n615# a_172_n518# w_n144_n618# sky130_fd_pr__pfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.5
+.ends
+
+
+* Top level circuit naked_test
+
+XXM1 sky130_fd_pr__pfet_01v8_8B6PNQ
+.end
+

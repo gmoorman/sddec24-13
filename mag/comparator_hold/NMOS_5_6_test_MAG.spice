@@ -1,0 +1,29 @@
+* NGSPICE file created from NMOS_5_6_test.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_PHZV97 a_15_n200# a_n73_n200# a_n33_n288# VSUBS
+X0 a_15_n200# a_n33_n288# a_n73_n200# VSUBS sky130_fd_pr__nfet_01v8 ad=0.58 pd=4.58 as=0.58 ps=4.58 w=2 l=0.15
+.ends
+
+.subckt NMOS_5_6_test M7_net M8_net voutplus voutminus CLK VSS
+Xxm40 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm31 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm30 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm42 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm41 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm32 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm43 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm33 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm44 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm34 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm35 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm25 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm36 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm26 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm37 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm27 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm38 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm29 voutminus M8_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm28 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+Xxm39 voutplus M7_net CLK VSS sky130_fd_pr__nfet_01v8_PHZV97
+.ends
+

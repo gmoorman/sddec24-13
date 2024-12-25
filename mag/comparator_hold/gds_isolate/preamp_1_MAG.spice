@@ -1,0 +1,44 @@
+* NGSPICE file created from preamp_1.ext - technology: sky130B
+
+.subckt sky130_fd_pr__nfet_01v8_GKZ9Z2 a_n100_n457# a_100_n369# a_n158_n369# VSUBS
+X0 a_100_n369# a_n100_n457# a_n158_n369# VSUBS sky130_fd_pr__nfet_01v8 ad=1.16 pd=8.58 as=1.16 ps=8.58 w=4 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_755577 a_n158_n464# a_n100_n561# a_100_n464# w_n194_n564#
+X0 a_100_n464# a_n100_n561# a_n158_n464# w_n194_n564# sky130_fd_pr__pfet_01v8_lvt ad=1.45 pd=10.58 as=1.45 ps=10.58 w=5 l=1
+.ends
+
+.subckt sky130_fd_pr__pfet_01v8_lvt_N5558H a_100_n536# a_n158_n536# a_n100_n562# w_n194_n598#
+X0 a_100_n536# a_n100_n562# a_n158_n536# w_n194_n598# sky130_fd_pr__pfet_01v8_lvt ad=1.45 pd=10.58 as=1.45 ps=10.58 w=5 l=1
+.ends
+
+.subckt preamp_1 VSS VDD curr_in Vinplus Viominus Vioplus Vinminus
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_0 Vioplus VSS Vioplus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_1 Viominus VSS Viominus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_2 Viominus VSS Viominus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__pfet_01v8_lvt_755577_1 Viominus Vinminus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__pfet_01v8_lvt_755577_0 Viominus Vinminus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_3 Viominus VSS Viominus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__pfet_01v8_lvt_755577_2 Viominus Vinminus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_5 Vioplus VSS Vioplus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_4 Viominus VSS Viominus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__pfet_01v8_lvt_755577_3 Viominus Vinminus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_6 Vioplus VSS Vioplus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__pfet_01v8_lvt_755577_4 Vioplus Vinplus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__nfet_01v8_GKZ9Z2_7 Vioplus VSS Vioplus VSS sky130_fd_pr__nfet_01v8_GKZ9Z2
+Xsky130_fd_pr__pfet_01v8_lvt_755577_5 Vioplus Vinplus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__pfet_01v8_lvt_755577_6 Vioplus Vinplus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_0 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_755577_7 Vioplus Vinplus m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__pfet_01v8_lvt_755577_8 VDD curr_in m1_664_n172# VDD sky130_fd_pr__pfet_01v8_lvt_755577
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_1 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_2 curr_in VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_3 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_4 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_5 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_6 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_7 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_8 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+Xsky130_fd_pr__pfet_01v8_lvt_N5558H_9 m1_664_n172# VDD curr_in VDD sky130_fd_pr__pfet_01v8_lvt_N5558H
+.ends
+

@@ -1,0 +1,63 @@
+
+Circuit 1 cell sky130_fd_pr__nfet_01v8 and Circuit 2 cell sky130_fd_pr__nfet_01v8 are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__nfet_01v8 is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__nfet_01v8         |Circuit 2: sky130_fd_pr__nfet_01v8         
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__nfet_01v8 and sky130_fd_pr__nfet_01v8 are equivalent.
+
+Circuit 1 cell sky130_fd_pr__pfet_01v8_lvt and Circuit 2 cell sky130_fd_pr__pfet_01v8_lvt are black boxes.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+Warning: Equate pins:  cell sky130_fd_pr__pfet_01v8_lvt is a placeholder, treated as a black box.
+
+Subcircuit pins:
+Circuit 1: sky130_fd_pr__pfet_01v8_lvt     |Circuit 2: sky130_fd_pr__pfet_01v8_lvt     
+-------------------------------------------|-------------------------------------------
+1                                          |1                                          
+2                                          |2                                          
+3                                          |3                                          
+4                                          |4                                          
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes sky130_fd_pr__pfet_01v8_lvt and sky130_fd_pr__pfet_01v8_lvt are equivalent.
+Flattening unmatched subcell sky130_fd_pr__nfet_01v8_GKZ9Z2 in circuit preamp_1 (0)(8 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_755577 in circuit preamp_1 (0)(9 instances)
+Flattening unmatched subcell sky130_fd_pr__pfet_01v8_lvt_N5558H in circuit preamp_1 (0)(10 instances)
+
+Class preamp_1 (0):  Merged 21 parallel devices.
+Subcircuit summary:
+Circuit 1: preamp_1                        |Circuit 2: preamp_1                        
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__nfet_01v8 (8->2)             |sky130_fd_pr__nfet_01v8 (8->2)             
+sky130_fd_pr__pfet_01v8_lvt (19->4)        |sky130_fd_pr__pfet_01v8_lvt (19->4)        
+Number of devices: 6                       |Number of devices: 6                       
+Number of nets: 8                          |Number of nets: 8                          
+---------------------------------------------------------------------------------------
+Resolving symmetries by property value.
+Resolving symmetries by pin name.
+Netlists match uniquely.
+
+Subcircuit pins:
+Circuit 1: preamp_1                        |Circuit 2: preamp_1                        
+-------------------------------------------|-------------------------------------------
+VDD                                        |VDD                                        
+Vinminus                                   |Vinminus                                   
+Vinplus                                    |Vinplus                                    
+VSS                                        |VSS                                        
+Viominus                                   |Viominus                                   
+Vioplus                                    |Vioplus                                    
+curr_in                                    |curr_in                                    
+---------------------------------------------------------------------------------------
+Cell pin lists are equivalent.
+Device classes preamp_1 and preamp_1 are equivalent.
+
+Final result: Circuits match uniquely.
+.

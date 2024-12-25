@@ -1,0 +1,9 @@
+** sch_path: /home/jaxie963/caravel_pls_man_analog/caravel_user_project_analog/xschem/PMOS_test.sch
+.subckt PMOS_test VDD CLK M5_net M6_net
+*.PININFO VDD:B CLK:B M5_net:B M6_net:B
+XM1 M5_net CLK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=10
+XM2 M6_net CLK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=10
+XM3 M5_net M6_net VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=2
+XM4 M6_net M5_net VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=2 nf=1 m=2
+.ends
+.end

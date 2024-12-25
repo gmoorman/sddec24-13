@@ -1,0 +1,16 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1730685553
+<< error_p >>
+rect 1090 905 1148 911
+rect 1090 871 1102 905
+rect 1090 865 1148 871
+rect 1090 377 1148 383
+rect 1090 343 1102 377
+rect 1090 337 1148 343
+use sky130_fd_pr__pfet_01v8_MJ75SZ  sky130_fd_pr__pfet_01v8_MJ75SZ_0
+timestamp 1730685553
+transform 1 0 1119 0 1 624
+box -109 -300 109 300
+<< end >>

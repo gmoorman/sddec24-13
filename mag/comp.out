@@ -1,0 +1,63 @@
+
+Cell test_mult_1 (1) disconnected node: proxyVSS
+Subcircuit summary:
+Circuit 1: test_mult_1                     |Circuit 2: test_mult_1                     
+-------------------------------------------|-------------------------------------------
+sky130_fd_pr__pfet_01v8 (2->1)             |sky130_fd_pr__pfet_01v8 (2) **Mismatch**   
+Number of devices: 1 **Mismatch**          |Number of devices: 2 **Mismatch**          
+Number of nets: 3 **Mismatch**             |Number of nets: 6 **Mismatch**             
+---------------------------------------------------------------------------------------
+NET mismatches: Class fragments follow (with fanout counts):
+Circuit 1: test_mult_1                     |Circuit 2: test_mult_1                     
+
+---------------------------------------------------------------------------------------
+Net: VSS                                   |Net: VSS                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+Net: input_test                            |Net: input_test                            
+  sky130_fd_pr__pfet_01v8/2 = 1            |  sky130_fd_pr__pfet_01v8/2 = 2            
+                                           |                                           
+Net: VDD                                   |Net: VDD                                   
+  sky130_fd_pr__pfet_01v8/(1|3) = 1        |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+  sky130_fd_pr__pfet_01v8/4 = 1            |                                           
+                                           |                                           
+(no matching net)                          |Net: xm2/a_n108_n100#                      
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: xm1/a_50_n100#                        
+                                           |  sky130_fd_pr__pfet_01v8/(1|3) = 1        
+                                           |                                           
+(no matching net)                          |Net: xm2/w_n144_n200#                      
+                                           |  sky130_fd_pr__pfet_01v8/4 = 2            
+---------------------------------------------------------------------------------------
+DEVICE mismatches: Class fragments follow (with node fanout counts):
+Circuit 1: test_mult_1                     |Circuit 2: test_mult_1                     
+
+---------------------------------------------------------------------------------------
+Instance: sky130_fd_pr__pfet_01v8:M1       |Instance: sky130_fd_pr__pfet_01v8_UE6DPA:x 
+  (1,3) = (2,1)                            |  (1,3) = (1,1)                            
+  2 = 1                                    |  2 = 2                                    
+  4 = 2                                    |  4 = 2                                    
+                                           |                                           
+(no matching instance)                     |Instance: sky130_fd_pr__pfet_01v8_UE6DPA:x 
+                                           |  (1,3) = (1,1)                            
+                                           |  2 = 2                                    
+                                           |  4 = 2                                    
+                                           |                                           
+---------------------------------------------------------------------------------------
+Netlists do not match.
+
+Subcircuit pins:
+Circuit 1: test_mult_1                     |Circuit 2: test_mult_1                     
+-------------------------------------------|-------------------------------------------
+VSS                                        |(no matching pin)                          
+input_test                                 |VDD **Mismatch**                           
+VDD                                        |VSS **Mismatch**                           
+(no matching pin)                          |proxyVSS                                   
+(no matching pin)                          |input_test                                 
+VSS                                        |(no matching pin)                          
+---------------------------------------------------------------------------------------
+Cell pin lists for test_mult_1 and test_mult_1 altered to match.
+Device classes test_mult_1 and test_mult_1 are equivalent.
+
+Final result: Top level cell failed pin matching.

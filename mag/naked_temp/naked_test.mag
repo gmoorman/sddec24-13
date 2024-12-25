@@ -1,0 +1,8 @@
+magic
+tech sky130B
+timestamp 1731140752
+use sky130_fd_pr__pfet_01v8_8B6PNQ  XM1
+timestamp 1731140752
+transform 1 0 72 0 1 609
+box -72 -309 212 -9
+<< end >>

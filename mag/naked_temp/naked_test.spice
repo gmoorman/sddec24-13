@@ -1,0 +1,6 @@
+** sch_path: /home/jaxie963/caravel_pls_man_analog/caravel_user_project_analog/xschem/naked_test.sch
+.subckt naked_test
+
+XM1 net1 net2 net3 net4 sky130_fd_pr__pfet_01v8 L=0.5 W=2 nf=1 m=2
+.ends
+.end

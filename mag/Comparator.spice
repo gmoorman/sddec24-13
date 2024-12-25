@@ -1,0 +1,20 @@
+** sch_path: /home/jaxie963/caravel_pls_man_analog/caravel_user_project_analog/xschem/Comparator.sch
+.subckt Comparator VDD VSS Vinplus Vinminus CLK Voutplus Voutminus
+*.PININFO VDD:B VSS:B Vinplus:B Vinminus:B CLK:B Voutplus:B Voutminus:B
+XM1 Voutplus CLK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 m=1
+XM2 Voutminus CLK VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=20 nf=1 m=1
+XM3 Voutplus Voutminus VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=1 m=1
+XM4 Voutminus Voutplus VDD VDD sky130_fd_pr__pfet_01v8 L=0.15 W=4 nf=1 m=1
+XM5 Voutplus CLK net1 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 m=1
+XM6 Voutminus CLK net3 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=20 nf=1 m=1
+XM7 net1 Voutminus net2 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 m=1
+XM8 net3 Voutplus net4 VSS sky130_fd_pr__nfet_01v8 L=0.15 W=4 nf=1 m=1
+XM9 net2 Vioplus VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 m=1
+XM10 net4 Viominus VSS VSS sky130_fd_pr__nfet_01v8 L=0.15 W=10 nf=1 m=1
+XM11 Viominus Vinminus net5 VSS sky130_fd_pr__nfet_01v8 L=1 W=20 nf=1 m=1
+XM12 Vioplus Vinplus net5 VSS sky130_fd_pr__nfet_01v8 L=1 W=20 nf=1 m=1
+I0 net5 VSS 50u
+XR1 Viominus VDD VSS sky130_fd_pr__res_xhigh_po W=1 L=10 mult=1 m=1
+XR2 Vioplus VDD VSS sky130_fd_pr__res_xhigh_po W=1 L=10 mult=1 m=1
+.ends
+.end

@@ -1,0 +1,70 @@
+magic
+tech sky130B
+magscale 1 2
+timestamp 1731179375
+<< nwell >>
+rect -154 -300 792 426
+<< nsubdiff >>
+rect 512 220 536 316
+rect 640 220 664 316
+<< nsubdiffcont >>
+rect 536 220 640 316
+<< locali >>
+rect 520 220 536 316
+rect 640 220 656 316
+<< viali >>
+rect 536 220 640 316
+<< metal1 >>
+rect 122 624 240 738
+rect 164 545 203 624
+rect -117 536 203 545
+rect -117 506 599 536
+rect -117 123 -78 506
+rect 164 497 599 506
+rect 164 125 203 497
+rect 560 322 599 497
+rect 524 316 652 322
+rect 524 220 536 316
+rect 640 220 652 316
+rect 524 214 652 220
+rect -492 2 -374 116
+rect -455 -408 -416 2
+rect -478 -418 -400 -408
+rect -478 -516 -400 -506
+rect -27 -674 23 -247
+rect 76 -418 115 -38
+rect 54 -428 142 -418
+rect 54 -516 142 -506
+rect 104 -674 222 -642
+rect 251 -674 301 -249
+rect 364 -418 403 -40
+rect 344 -428 432 -418
+rect 344 -516 432 -506
+rect -27 -724 301 -674
+rect 104 -756 222 -724
+<< via1 >>
+rect -478 -506 -400 -418
+rect 54 -506 142 -428
+rect 344 -506 432 -428
+<< metal2 >>
+rect -488 -506 -478 -418
+rect -400 -428 -390 -418
+rect -400 -506 54 -428
+rect 142 -506 344 -428
+rect 432 -506 442 -428
+use sky130_fd_pr__pfet_01v8_PC7DPC  xm1
+timestamp 1731176354
+transform 1 0 0 0 1 0
+box -144 -300 144 300
+use sky130_fd_pr__pfet_01v8_PC7DPC  xm2
+timestamp 1731176354
+transform 1 0 280 0 1 0
+box -144 -300 144 300
+<< labels >>
+rlabel metal1 -492 2 -374 116 1 VSS
+port 2 n
+rlabel metal1 122 624 240 738 1 VDD
+port 1 n
+rlabel metal1 104 -756 222 -642 1 input_test
+port 3 n
+<< end >>

@@ -1,0 +1,37 @@
+v {xschem version=3.4.4 file_version=1.2
+}
+G {}
+K {type=primitive
+format="@name @pinlist @symname"
+template="name=x1"
+}
+V {}
+S {}
+E {}
+L 4 -130 -70 130 -70 {}
+L 4 -130 70 130 70 {}
+L 4 -130 -70 -130 70 {}
+L 4 130 -70 130 70 {}
+L 7 130 -60 150 -60 {}
+L 7 130 -40 150 -40 {}
+L 7 130 -20 150 -20 {}
+L 7 130 0 150 0 {}
+L 7 130 20 150 20 {}
+L 7 130 40 150 40 {}
+L 7 130 60 150 60 {}
+B 5 147.5 -62.5 152.5 -57.5 {name=VDD dir=inout}
+B 5 147.5 -42.5 152.5 -37.5 {name=VSS dir=inout}
+B 5 147.5 -22.5 152.5 -17.5 {name=CLK dir=inout}
+B 5 147.5 -2.5 152.5 2.5 {name=Voutplus dir=inout}
+B 5 147.5 17.5 152.5 22.5 {name=Voutminus dir=inout}
+B 5 147.5 37.5 152.5 42.5 {name=Vioplus dir=inout}
+B 5 147.5 57.5 152.5 62.5 {name=Viominus dir=inout}
+T {@symname} -126 -6 0 0 0.3 0.3 {}
+T {@name} 135 -82 0 0 0.2 0.2 {}
+T {VDD} 125 -64 0 1 0.2 0.2 {}
+T {VSS} 125 -44 0 1 0.2 0.2 {}
+T {CLK} 125 -24 0 1 0.2 0.2 {}
+T {Voutplus} 125 -4 0 1 0.2 0.2 {}
+T {Voutminus} 125 16 0 1 0.2 0.2 {}
+T {Vioplus} 125 36 0 1 0.2 0.2 {}
+T {Viominus} 125 56 0 1 0.2 0.2 {}
