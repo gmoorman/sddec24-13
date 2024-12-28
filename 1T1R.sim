@@ -1,0 +1,8 @@
+| units: 500000 tech: sky130B format: MIT
+x BL XR1.BE s=112400,6112 l=0 w=0 x=226 y=1546 sky130_fd_pr__reram_reram_cell
+x WL SL XR1.BE VSS s=81200,2916 d=81200,2916 l=100 w=1400 x=88 y=938 sky130_fd_pr__nfet_g5v0d10v5
+= BL XR1.TE
+R SL 3287
+R WL 874
+R VSS 14868
+R XR1.BE 3285

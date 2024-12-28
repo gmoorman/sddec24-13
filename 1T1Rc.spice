@@ -1,0 +1,8 @@
+** sch_path: /home/kivimagi/reram/caravel_user_project_analog/xschem/1T1Rc.sch
+.subckt 1T1Rc SL VSS WL BL
+*.PININFO SL:B VSS:B WL:B BL:B
+XR1 BL net1 sky130_fd_pr_reram__reram_cell Tfilament_0=3.8e-9
+XM1 net1 WL SL VSS sky130_fd_pr__nfet_g5v0d10v5 L=0.5 W=7 nf=1 m=1
+.ends
+
+.end
