@@ -1,4 +1,4 @@
-# Iowa State University SDDEC24-13: RERAM COMPUTE CROSSBAR FABRICATION
+# Iowa State University <br/> SDDEC24-13: RERAM COMPUTE CROSSBAR FABRICATION
 
 - Still need to update README
 - Missing Verilog stuff
