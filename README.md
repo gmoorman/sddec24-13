@@ -53,7 +53,7 @@ export PATH="/home/user/.local/bin:$PATH"
       xschem
       ```
       - Xschem should pull up a schematic "top.sch" that should look like this: \
-      ![Xschem top.sch example](README_files/xschem_topsch_ex.png "Xschem top.sch example")
+      ![Xschem top.sch example](README_files/xschem_topsch_ex.PNG "Xschem top.sch example")
    - Magic VLSI
       - Launch Magic VLSI with the sky130B PDK in the \mag folder (or any folder with the file "sky130B.magicrc")  with the following command:
       ```sh
