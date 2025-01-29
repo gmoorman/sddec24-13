@@ -819,7 +819,7 @@ rect -1528 9356 -728 9438
 rect -4078 146 -3978 246
 rect -1528 -1150 -1430 9356
 rect -1528 -1240 64412 -1150
-use combination_test_DUMMY  combination_test_DUMMY_0 ~/caravel_pls_man_analog/caravel_user_project_analog/mag/comparator_hold/gds_isolate
+use combination_test_DUMMY  combination_test_DUMMY_0 
 timestamp 1733627311
 transform 1 0 53078 0 1 8472
 box -574 -8600 3812 1466
