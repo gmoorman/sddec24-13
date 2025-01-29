@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -237,10 +236,10 @@ N 350 190 400 190 {
 lab=VSS}
 N -730 210 -680 210 {
 lab=VSS}
-C {4x4crossbar.sym} -880 -180 0 0 {name=x1}
-C {4x4crossbar.sym} 200 -200 0 0 {name=x2}
-C {4x4crossbar.sym} 200 310 0 0 {name=x3}
-C {4x4crossbar.sym} -880 330 0 0 {name=x4}
+C {Crossbar/4x4crossbar.sym} -880 -180 0 0 {name=x1}
+C {Crossbar/4x4crossbar.sym} 200 -200 0 0 {name=x2}
+C {Crossbar/4x4crossbar.sym} 200 310 0 0 {name=x3}
+C {Crossbar/4x4crossbar.sym} -880 330 0 0 {name=x4}
 C {devices/iopin.sym} -690 -420 0 0 {name=p1 lab=BL1}
 C {devices/iopin.sym} -620 -420 0 0 {name=p2 lab=BL2}
 C {devices/iopin.sym} -560 -420 0 0 {name=p3 lab=BL3}

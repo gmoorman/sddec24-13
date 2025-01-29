@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -124,5 +123,5 @@ C {devices/lab_pin.sym} -10 -380 1 0 {name=p6 sig_type=std_logic lab=CompPlus}
 C {devices/lab_pin.sym} -10 -360 3 0 {name=p8 sig_type=std_logic lab=CompNeg}
 C {devices/lab_pin.sym} -490 -170 1 0 {name=p12 sig_type=std_logic lab=VDD}
 C {devices/vdd.sym} -430 -170 0 0 {name=l7 lab=V1v8}
-C {xschem/Amplifiers/Comparator.sym} -20 -340 0 0 {name=x6}
-C {xschem/StandardCells/SRlatch.sym} 130 -370 0 0 {name=x22}
+C {Amplifiers/Comparator.sym} -20 -340 0 0 {name=x6}
+C {StandardCells/SRlatch.sym} 130 -370 0 0 {name=x22}

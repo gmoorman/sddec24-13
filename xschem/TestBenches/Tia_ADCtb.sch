@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -290,9 +289,9 @@ C {devices/launcher.sym} 800 -130 0 0 {name=h5
 descr="load waves" 
 tclcommand="xschem raw_read $netlist_dir/Tia_ADCtb.raw tran"
 }
-C {xschem/Amplifiers/2stageOpamp.sym} -525 50 0 0 {name=x1}
-C {xschem/DataConverters/4bitADC.sym} 980 350 0 0 {name=x2}
-C {xschem/StandardCells/Priority_Encoder_16t4.sym} 1320 170 0 0 {name=x3 prefix=sky130_fd_sc_hd__ }
+C {Amplifiers/2stageOpamp.sym} -525 50 0 0 {name=x1}
+C {DataConverters/4bitADC.sym} 980 350 0 0 {name=x2}
+C {StandardCells/Priority_Encoder_16t4.sym} 1320 170 0 0 {name=x3 prefix=sky130_fd_sc_hd__ }
 C {devices/lab_pin.sym} -125 40 0 0 {name=p7 lab=Vin
 }
 C {devices/lab_pin.sym} 20 370 3 0 {name=p8 lab=Clk}
@@ -301,10 +300,10 @@ C {devices/lab_pin.sym} 275 -50 3 1 {name=p9 sig_type=std_logic lab=V1v8}
 C {devices/gnd.sym} 275 100 0 1 {name=l8 lab=GND}
 C {devices/lab_pin.sym} 95 40 1 0 {name=p19 sig_type=std_logic lab=Vsample}
 C {devices/lab_pin.sym} 20 115 0 0 {name=p20 sig_type=std_logic lab=Clk2}
-C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} 145 70 0 0 {name=C5 model=cap_mim_m3_2 W=5 L=5 MF=10 spiceprefix=X}
-C {xschem/StandardCells/TransmissionGate.sym} -35 40 2 0 {name=x6}
-C {xschem/Amplifiers/2stageOpamp.sym} 265 20 0 0 {name=x4}
-C {xschem/StandardCells/inverter.sym} 20 280 3 0 {name=x5}
+C {sky130_fd_pr/cap_mim_m3_2.sym} 145 70 0 0 {name=C5 model=cap_mim_m3_2 W=5 L=5 MF=10 spiceprefix=X}
+C {StandardCells/TransmissionGate.sym} -35 40 2 0 {name=x6}
+C {Amplifiers/2stageOpamp.sym} 265 20 0 0 {name=x4}
+C {StandardCells/inverter.sym} 20 280 3 0 {name=x5}
 C {devices/lab_pin.sym} -325 350 1 0 {name=p17 lab=Clk}
 C {devices/vsource.sym} -255 420 0 0 {name=V4 value=1.8 savecurrent=false}
 C {devices/vsource.sym} -405 420 0 0 {name=V6 value=1 savecurrent=true

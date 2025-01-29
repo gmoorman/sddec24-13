@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -99,7 +98,7 @@ N 340 -70 340 -10 {
 lab=GND}
 N 130 -120 130 -60 {
 lab=GND}
-C {4x4crossbar.sym} -40 -80 2 0 {name=x1 prefix=sky130_fd_sc_hd__}
+C {Crossbar/4x4crossbar.sym} -40 -80 2 0 {name=x1 prefix=sky130_fd_sc_hd__}
 C {devices/ammeter.sym} 130 -180 0 0 {name=Vmeas savecurrent=true}
 C {devices/ammeter.sym} 200 -180 0 0 {name=Vmeas1 savecurrent=true}
 C {devices/ammeter.sym} 270 -180 0 0 {name=Vmeas2 savecurrent=true}

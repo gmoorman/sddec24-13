@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -135,7 +134,7 @@ C {devices/lab_pin.sym} -250 -450 0 0 {name=p10 lab=Clk}
 C {devices/lab_pin.sym} 150 -510 2 1 {name=p11 sig_type=std_logic lab=VDD}
 C {devices/param.sym} -410 110 0 0 {name=s1 value="r=1"}
 C {devices/sqwsource.sym} -590 -60 1 0 {name=V2 vhi=1.8 freq=40e6}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/Priority_Encoder_16t4.sym} 300 -360 0 0 {name=x2 prefix=sky130_fd_sc_hd__ }
+C {DataConverters/Priority_Encoder_16t4.sym} 300 -360 0 0 {name=x2 prefix=sky130_fd_sc_hd__ }
 C {devices/code.sym} -110 320 0 0 {name=STDCELLS
 only_toplevel=true
 format="tcleval( @value )"
@@ -150,7 +149,7 @@ descr="load waves"
 tclcommand="xschem raw_read $netlist_dir/4bitADCtb.raw tran"
 }
 C {devices/lab_pin.sym} -250 -430 2 1 {name=p1 sig_type=std_logic lab=VDD}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/4bitADC.sym} -40 -180 0 0 {name=x1}
+C {DataConverters/4bitADC.sym} -40 -180 0 0 {name=x1}
 C {devices/gnd.sym} 90 -530 1 0 {name=l1 lab=GND}
 C {devices/capa.sym} 630 -500 0 0 {name=C1
 m=1

@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -73,7 +72,7 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {xschem/Amplifiers/2stageOpamp.sym} 90 -20 0 0 {name=x1}
+C {Amplifiers/2stageOpamp.sym} 90 -20 0 0 {name=x1}
 C {devices/vsource.sym} -250 40 0 0 {name=V1 value=1.8 savecurrent=false}
 C {devices/vsource.sym} -250 170 0 0 {name=V2 value=0.9 savecurrent=false}
 C {devices/vsource.sym} -390 40 0 0 {name=V3 value=1.2  savecurrent=false}

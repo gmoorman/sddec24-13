@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -100,4 +99,4 @@ value=".include /home/kivimagi/reram/caravel_user_project_analog/mag/1T1R.spice
 "
 ###.include /home/kivimagi/reram/caravel_user_project_analog/mag/1T1R.spice }
 C {devices/vsource.sym} 230 -10 0 0 {name=V4 value="PWL(0 0 4u 0 4.5u 2.5 5.5u 2.5 6u 0)"}
-C {1T1Rres.sym} 50 -60 2 0 {name=x2}
+C {Crossbar/1T1Rres.sym} 50 -60 2 0 {name=x2}

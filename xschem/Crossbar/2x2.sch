@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -85,10 +84,10 @@ N -50 150 440 150 {
 lab=SL2}
 N 370 80 370 150 {
 lab=SL2}
-C {1T1R.sym} -230 -110 0 0 {name=x1}
-C {1T1R.sym} 210 -110 0 0 {name=x2}
-C {1T1R.sym} -230 50 0 0 {name=x3}
-C {1T1R.sym} 210 50 0 0 {name=x4}
+C {Crossbar/1T1R.sym} -230 -110 0 0 {name=x1}
+C {Crossbar/1T1R.sym} 210 -110 0 0 {name=x2}
+C {Crossbar/1T1R.sym} -230 50 0 0 {name=x3}
+C {Crossbar/1T1R.sym} 210 50 0 0 {name=x4}
 C {devices/lab_pin.sym} -30 -100 2 0 {name=p1 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -30 60 2 0 {name=p2 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 430 60 2 0 {name=p3 sig_type=std_logic lab=VSS}

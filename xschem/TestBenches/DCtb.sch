@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -40,7 +39,7 @@ C {devices/vsource.sym} -210 90 0 0 {name=V2 value=0.9 savecurrent=false}
 C {devices/lab_pin.sym} -210 160 0 0 {name=p1 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -270 20 0 0 {name=p2 sig_type=std_logic lab=0}
 C {devices/lab_pin.sym} -210 -100 0 0 {name=p3 sig_type=std_logic lab=VDD}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/5TOpamp.sym} 160 0 0 0 {name=x1}
+C {Amplifiers/5TOpamp.sym} 160 0 0 0 {name=x1}
 C {devices/vsource.sym} 210 -120 1 0 {name=V3 value=VoQ savecurrent=false}
 C {devices/vsource.sym} 90 -120 3 0 {name=Vcm value=0 savecurrent=false}
 C {devices/capa.sym} 300 30 0 0 {name=C1

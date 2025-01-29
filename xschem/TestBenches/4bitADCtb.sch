@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -308,12 +307,12 @@ C {devices/lab_pin.sym} -1240 -300 1 0 {name=p8 sig_type=std_logic lab=Vin}
 C {devices/lab_pin.sym} -610 -540 0 0 {name=p11 sig_type=std_logic lab=V1v8}
 C {devices/vdd.sym} -1040 -280 0 0 {name=l3 lab=V1v8}
 C {devices/vdd.sym} -1300 -300 0 0 {name=l6 lab=V3v3}
-C {dependencies/pdks/sky130B/libs.tech/xschem/sky130_fd_pr/cap_mim_m3_2.sym} -1410 -430 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
-C {xschem/StandardCells/TransmissionGate.sym} -1590 -490 2 0 {name=x6}
-C {xschem/Amplifiers/2stageOpamp.sym} -1290 -510 0 0 {name=x4}
-C {xschem/DataConverters/4bitADC.sym} -750 -210 0 0 {name=x1}
-C {xschem/StandardCells/Priority_Encoder_16t4.sym} -280 -390 0 0 {name=x2 prefix=sky130_fd_sc_hd__ }
-C {xschem/StandardCells/inverter.sym} -1535 -250 3 0 {name=x5}
+C {sky130_fd_pr/cap_mim_m3_2.sym} -1410 -430 0 0 {name=C2 model=cap_mim_m3_2 W=10 L=10 MF=5 spiceprefix=X}
+C {StandardCells/TransmissionGate.sym} -1590 -490 2 0 {name=x6}
+C {Amplifiers/2stageOpamp.sym} -1290 -510 0 0 {name=x4}
+C {DataConverters/4bitADC.sym} -750 -210 0 0 {name=x1}
+C {DataConverters/Priority_Encoder_16t4.sym} -280 -390 0 0 {name=x2 prefix=sky130_fd_sc_hd__ }
+C {StandardCells/inverter.sym} -1535 -250 3 0 {name=x5}
 C {devices/lab_pin.sym} -1450 -490 1 0 {name=p18 sig_type=std_logic lab=Vsample}
 C {devices/capa.sym} 1040 165 0 0 {name=C1
 m=1

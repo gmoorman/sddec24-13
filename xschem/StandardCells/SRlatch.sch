@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -35,7 +34,7 @@ N 65 -50 175 -50 {
 lab=Q}
 N 370 60 420 60 {
 lab=R}
-C {Inverter1v8.sym} -190 60 0 0 {name=x1}
+C {StandardCells/Inverter1v8.sym} -190 60 0 0 {name=x1}
 C {sky130_fd_pr/nfet_01v8.sym} -170 60 0 0 {name=M17
 L=0.15
 W=4
@@ -50,7 +49,7 @@ sa=0 sb=0 sd=0
 model=nfet_01v8
 spiceprefix=X
 }
-C {Inverter1v8.sym} 220 60 2 0 {name=x2}
+C {StandardCells/Inverter1v8.sym} 220 60 2 0 {name=x2}
 C {sky130_fd_pr/nfet_01v8.sym} 195 60 0 1 {name=M21
 L=0.15
 W=4
@@ -67,8 +66,8 @@ spiceprefix=X
 }
 C {devices/gnd.sym} -150 150 0 0 {name=l1 lab=GND}
 C {devices/gnd.sym} 175 145 0 0 {name=l2 lab=GND}
-C {Inverter1v8.sym} -85 -50 2 0 {name=x3}
-C {Inverter1v8.sym} 100 -190 2 1 {name=x4}
+C {StandardCells/Inverter1v8.sym} -85 -50 2 0 {name=x3}
+C {StandardCells/Inverter1v8.sym} 100 -190 2 1 {name=x4}
 C {devices/ipin.sym} -400 60 0 0 {name=p1 lab=S}
 C {devices/ipin.sym} 420 60 2 0 {name=p2 lab=R}
 C {devices/opin.sym} -150 -100 0 1 {name=p3 lab=Qnot}

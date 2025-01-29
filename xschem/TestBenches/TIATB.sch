@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -66,7 +65,7 @@ value="
   plot Vinplus
 .endc
 "}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/2stageOpamp.sym} 130 150 0 0 {name=x2}
+C {Amplifiers/2stageOpamp.sym} 130 150 0 0 {name=x2}
 C {devices/isource.sym} -100 -10 0 0 {name=I1 value="10u"}
 C {devices/gnd.sym} -100 -120 2 0 {name=l3 lab=GND}
 C {devices/gnd.sym} 140 220 0 0 {name=l5 lab=GND}

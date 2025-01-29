@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -100,7 +99,7 @@ N -110 10 -90 10 {
 lab=BL}
 N -90 -50 -90 10 {
 lab=BL}
-N -110 -30 -100 -30 {}
+N -110 -30 -100 -30 {lab=WLres}
 C {devices/ammeter.sym} 230 -70 0 0 {name=Vmeas savecurrent=true}
 C {devices/gnd.sym} 230 50 0 0 {name=l1 lab=GND}
 C {devices/vsource.sym} -390 20 0 0 {name=V2 value="PWL(0 0 0.25u 2 3.5u 2 4u 0 5.5u 0 6u 2)"}
@@ -129,7 +128,7 @@ C {devices/vsource.sym} -120 120 0 0 {name=V3 value="PWL(0 0 3u 0 3.5u 2 5.5u 2 
 C {devices/gnd.sym} -120 150 0 0 {name=l3 lab=GND}
 C {devices/vsource.sym} 230 -10 0 0 {name=V4 value="PWL(0 0 3.5u 0 4u 2.5 5u 2.5 5.5u 0 6u 0)"}
 C {devices/lab_pin.sym} -120 70 2 0 {name=p3 sig_type=std_logic lab=WLres}
-C {1T1Rres.sym} 60 -60 2 0 {name=x2}
+C {Crossbar/1T1Rres.sym} 60 -60 2 0 {name=x2}
 C {devices/gnd.sym} -110 -10 0 0 {name=l4 lab=GND}
 C {devices/gnd.sym} -110 -50 0 0 {name=l5 lab=GND}
 C {devices/gnd.sym} -100 -30 0 0 {name=l6 lab=GND}

@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -245,7 +244,7 @@ N -90 -740 -90 -690 {
 lab=#net2}
 N -90 -1590 -90 -1540 {
 lab=#net3}
-N -90 960 -90 1010 {}
+N -90 960 -90 1010 {lab=GND}
 C {devices/lab_pin.sym} -90 -1770 1 0 {name=p19 sig_type=std_logic lab=Vrefa}
 C {devices/ammeter.sym} -90 -1620 0 0 {name=Vmeas1 savecurrent=true}
 C {devices/ipin.sym} -310 -310 0 0 {name=p26 lab=Vin}

@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -96,7 +95,7 @@ C {devices/launcher.sym} 230 -50 0 0 {name=h3
 descr="Netlist & sim" 
 tclcommand="xschem netlist; xschem simulate"}
 C {devices/sqwsource.sym} -860 230 0 0 {name=V5 vhi=1.8 freq=40e6}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/Comparator.sym} -320 0 0 0 {name=x1}
+C {Amplifiers/Comparator.sym} -320 0 0 0 {name=x1}
 C {devices/lab_pin.sym} -540 -80 1 0 {name=p3 sig_type=std_logic lab=Vin}
 C {devices/code.sym} 60 100 0 0 {name=TT_MODELS
 only_toplevel=true

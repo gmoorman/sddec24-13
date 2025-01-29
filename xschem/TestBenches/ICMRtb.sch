@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -147,5 +146,5 @@ C {devices/ngspice_probe.sym} -150 -300 0 0 {name=r2}
 C {devices/vsource.sym} -530 90 0 0 {name=V1 value=0 savecurrent=false}
 C {devices/gnd.sym} -10 60 0 0 {name=l5 lab=GND}
 C {devices/lab_pin.sym} -130 10 3 0 {name=p9 sig_type=std_logic lab=Vinplus}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/2stageOpamp.sym} 60 -20 0 0 {name=x1}
+C {Amplifiers/2stageOpamp.sym} -20 -10 0 0 {name=x1}
 C {devices/lab_pin.sym} -530 160 3 0 {name=p2 sig_type=std_logic lab=VSS}

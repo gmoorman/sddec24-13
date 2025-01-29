@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -19,7 +18,8 @@ N -200 60 -200 80 {
 lab=GND}
 N -40 140 -40 160 {
 lab=GND}
-C {dependencies/pdks/sky130B/libs.tech/xschem/inverter.sym} -20 0 0 0 {name=x1}
+N -110 -0 -80 -0 {lab=#net3}
+C {StandardCells/inverter.sym} -20 0 0 0 {name=x1}
 C {devices/vsource.sym} -200 30 0 0 {name=V1 value="pulse(0 1.8 1ns 1ns 1ns 5ns 10ns) " savecurrent=false}
 C {devices/vsource.sym} -40 -120 2 0 {name=V2 value=1.8 savecurrent=false}
 C {devices/gnd.sym} -40 -160 2 0 {name=l1 lab=GND}

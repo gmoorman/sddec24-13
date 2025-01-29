@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -69,7 +68,7 @@ C {devices/vsource.sym} -420 40 0 0 {name=V3 value=0.9 savecurrent=false}
 C {devices/lab_pin.sym} -420 -70 1 0 {name=p1 sig_type=std_logic lab=Vcm}
 C {devices/lab_pin.sym} -280 -70 1 0 {name=p2 sig_type=std_logic lab=VDD}
 C {devices/lab_pin.sym} -280 270 3 0 {name=p3 sig_type=std_logic lab=VSS}
-C {xschem/Amplifiers/2stageOpamp.sym} 190 10 0 0 {name=x1}
+C {Amplifiers/2stageOpamp.sym} 190 10 0 0 {name=x1}
 C {devices/lab_pin.sym} 200 80 3 0 {name=p4 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 200 -80 1 0 {name=p5 sig_type=std_logic lab=VDD}
 C {devices/vcvs.sym} 50 110 0 0 {name=E1 value=1}

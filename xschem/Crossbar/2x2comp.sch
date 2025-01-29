@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -94,7 +93,7 @@ C {devices/iopin.sym} 430 -120 0 0 {name=p7 lab=WL1}
 C {devices/iopin.sym} 430 40 0 0 {name=p8 lab=WL2}
 C {devices/iopin.sym} -50 160 0 0 {name=p9 lab=SL1}
 C {devices/iopin.sym} 370 160 0 0 {name=p10 lab=SL2}
-C {1T1Rc.sym} -230 -110 0 0 {name=x1}
-C {1T1Rc.sym} 210 -110 0 0 {name=x2}
-C {1T1Rc.sym} -230 50 0 0 {name=x3}
-C {1T1Rc.sym} 210 50 0 0 {name=x4}
+C {Crossbar/1T1Rc.sym} -230 -110 0 0 {name=x1}
+C {Crossbar/1T1Rc.sym} 210 -110 0 0 {name=x2}
+C {Crossbar/1T1Rc.sym} -230 50 0 0 {name=x3}
+C {Crossbar/1T1Rc.sym} 210 50 0 0 {name=x4}

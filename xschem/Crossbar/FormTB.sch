@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -45,7 +44,7 @@ N 80 10 100 10 {
 lab=#net2}
 N 100 10 100 30 {
 lab=#net2}
-C {1T1R.sym} -70 0 0 0 {name=x1}
+C {Crossbar/1T1R.sym} -70 0 0 0 {name=x1}
 C {devices/isource.sym} 350 -50 0 0 {name=I0 value=1m}
 C {devices/vsource.sym} 170 -10 3 0 {name=V1 value=2 savecurrent=false}
 C {devices/gnd.sym} 250 -10 0 0 {name=l1 lab=GND}

@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -134,7 +133,7 @@ C {devices/lab_pin.sym} 70 -170 2 0 {name=p14 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} 70 60 2 0 {name=p15 sig_type=std_logic lab=VSS}
 C {devices/lab_pin.sym} -390 50 2 0 {name=p16 sig_type=std_logic lab=VSS}
 C {devices/iopin.sym} -300 -330 0 0 {name=p17 lab=VSS}
-C {2x2.sym} -650 -120 0 0 {name=x1}
-C {2x2.sym} -650 110 0 0 {name=x2}
-C {2x2.sym} -190 -110 0 0 {name=x3}
-C {2x2.sym} -190 120 0 0 {name=x4}
+C {Crossbar/2x2.sym} -650 -120 0 0 {name=x1}
+C {Crossbar/2x2.sym} -650 110 0 0 {name=x2}
+C {Crossbar/2x2.sym} -190 -110 0 0 {name=x3}
+C {Crossbar/2x2.sym} -190 120 0 0 {name=x4}

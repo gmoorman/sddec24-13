@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -57,7 +56,7 @@ N 300 -70 300 -50 {
 lab=VSS}
 C {devices/vsource.sym} -210 -80 0 0 {name=V1 value=0.9 savecurrent=false}
 C {devices/vsource.sym} -210 50 0 0 {name=V2 value=0.9 savecurrent=false}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/5TOpamp.sym} 320 -120 0 0 {name=x1}
+C {Amplifiers/5TOpamp.sym} 110 -120 0 0 {name=x1}
 C {devices/capa.sym} 430 -90 0 0 {name=C1
 m=1
 value=1p

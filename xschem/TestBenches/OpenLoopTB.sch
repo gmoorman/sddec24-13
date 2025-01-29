@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -276,5 +275,5 @@ device="ceramic capacitor"}
 C {devices/gnd.sym} -20 -350 2 0 {name=l5 lab=GND}
 C {devices/vcvs.sym} -20 -310 2 0 {name=E1 value=1}
 C {devices/lab_pin.sym} 60 -290 2 0 {name=p6 sig_type=std_logic lab=VoutQ}
-C {xschem/Amplifiers/2stageOpamp.sym} -20 -460 0 0 {name=x1}
-C {xschem/Amplifiers/2stageOpamp.sym} 10 -90 0 0 {name=x2}
+C {Amplifiers/2stageOpamp.sym} -20 -460 0 0 {name=x1}
+C {Amplifiers/2stageOpamp.sym} 10 -90 0 0 {name=x2}

@@ -1,5 +1,4 @@
-v {xschem version=3.4.4 file_version=1.2
-}
+v {xschem version=3.4.6 file_version=1.2}
 G {}
 K {}
 V {}
@@ -63,7 +62,7 @@ m=1
 value=1p
 footprint=1206
 device="ceramic capacitor"}
-C {dependencies/pdks/sky130B/libs.tech/xschem/userLib/2stageOpamp.sym} 70 20 0 0 {name=x1}
+C {Amplifiers/2stageOpamp.sym} -10 30 0 0 {name=x1}
 C {devices/lab_pin.sym} -400 -100 2 0 {name=p5 lab=Vin+
 }
 C {devices/vsource.sym} -580 100 1 0 {name=Vdd value=1.8 savecurrent=true}
