@@ -1,4 +1,4 @@
-# Iowa State University <br/> SDDEC24-13: RERAM COMPUTE CROSSBAR FABRICATION
+# Iowa State University <br/> sddec24-13: ReRAM Compute Crossbar ASIC Fabrication
 
 <!-- <p align="center">
   <img src="README_files/render3d_8x8.png" alt="dumb stupid render thing"/>
@@ -6,17 +6,14 @@
 
 ![dumb stupid render thing](README_files/render3d_8x8.PNG "dumb stupid render thing")
 
-This is the project repository of Iowa State ECE Senior Design Team SDDEC24-13. The goal of this design team was to develop a research vehicle for silicon, exploring the computational capabilities of a Resistive Random Access Memory (ReRAM or RRAM) crossbar. This circuit was developed in the Skywater SKY130nm process and follows the Efabless design flow which uses the open source tools featured in the caravel harness workflow. 
+This is the project repository of Iowa State ECpE Senior Design Team sddec24-13. The goal of this design team was to develop a research vehicle for silicon, exploring the computational capabilities of a Resistive Random Access Memory (ReRAM or RRAM) crossbar. This circuit was developed in the Skywater SKY130nm process and follows the Efabless design flow which uses the open source tools featured in the caravel harness workflow. 
 
 Currently, the individual components for this project function correctly. Most components have associated layouts that have passed DRC and LVS (Please reference the [Future Work](#FutureWork) for more information). Unfortunatly, these components have not been tested completely as a system due to time constraints. 
 
 [Link to senior design website.](https://sddec24-13.sd.ece.iastate.edu/)
 
-- Still need to update README
 - Missing Verilog stuff
-- Missing .tcl stuff
 - Missing C code for periphs
-- Missing Documents
 
 ## Table of Contents
  - [General Design](#GeneralDesign) 
@@ -68,7 +65,7 @@ export PATH="/home/user/.local/bin:$PATH"
       ![Magic VLSI gencell example](README_files/magic_vlsi_ex.PNG "Magic VLSI gencell example")
 
 ### Tools <a id="Tools"></a>
-This project is confirmed to work on Red Hat Enterprise Linux 8.10 (Ootpa). \
+This project is confirmed to work on Red Hat Enterprise Linux 8.10 (Ootpa) and Ubuntu 24.04 LTS. \
 The tools used in this design enviornment is as follows (The project is confirmed to function with the provided tool versions):
 
 - Xschem v3.4.4
