@@ -35,9 +35,9 @@ Currently, the individual components for this project function correctly. Most c
 ### General Setup Guide <a id="GeneralSetup"></a>
 
 1) Install the Skywater 130nm PDK
-2) Install all relavent software and software dependencies or activate toolchain
-3) Pull this repository and replace identical folders in the Analog Caravel Harness repository
-4) Install the Analog Caravel Harness repository
+2) Install all relavent software and software dependencies or the ChipForge toolchain
+3) Install the Analog Caravel Harness repository
+4) Pull this repository and replace identical folders in the Analog Caravel Harness repository
 5) Set the following enviornment variables as such
 ```sh
 export OPENLANE_ROOT=$(pwd)/path/to/caravel_user_project_analog/dependencies/openlane_src
