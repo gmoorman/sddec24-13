@@ -31,7 +31,7 @@ Currently, the individual components for this project function correctly. Most c
 
 ## General Design <a id="GeneralDesign"></a>
 
-
+<img src="layout.PNG" alt="aaaah" width="300"/>
 
 ## Setup <a id="Setup"></a>
 
@@ -108,7 +108,7 @@ export OPEN_PDKS_COMMIT?=0fe599b2afb6708d281543108caf8310912f54af
 
 2) Configure enviornment variables as such:
 ```sh
-export CARAVEL_ROOT=(pwd)/path/to/caravel_user_project_analog/caravel
+export CARAVEL_ROOT=$(pwd)/path/to/caravel_user_project_analog/caravel
 export PDK=sky130B
 export PDK_ROOT="/home/user/PDK"
 ```
